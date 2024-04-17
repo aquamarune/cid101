@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body{
     margin: 0;
     padding: 0;
@@ -382,3 +383,389 @@ footer .container{
 
 
 
+=======
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgba(249,249,249); /* 白灰背景 */
+    background-image: url('/pic/bg1.png');
+    background-repeat: repeat; 
+    /* font-family: "Noto Sans TC", "Noto Serif TC",sans-serif; */
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    white-space: nowrap;
+}
+.header-pic{
+    display: flex;
+}
+.header-pic .container{
+    justify-content: center;
+    position: relative;
+}
+.header-pic .text{
+    font-size: 30px;
+    color: #fff;
+    font-weight: bold; /* 粗體 */
+    /* font-family: "Noto Serif TC"; */
+    letter-spacing: 15px;
+    position: absolute;
+    bottom: 25%;
+    right: 0px;
+    z-index: 1;
+}
+.nav-box .container{
+    z-index: 10;
+    display: flex;
+    margin-top: -82px;
+    width: 100%;
+    align-items: end;
+    gap: 20px;
+    font-size: 24px;
+    color: #1c1c1c;
+    font-weight: 400;
+    letter-spacing: 3.84px;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+.nav-box .container nav{
+    height: 100px;
+    /* background-color: aqua; */
+    width: 1440px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content:center ;
+    align-items: center;
+}
+.nav-box .container nav .l-red-line img{
+    aspect-ratio: 25;
+    object-fit: auto;
+    object-position: center;
+    width: 329px;
+    margin-top: 152px;
+    max-width: 100%;
+}
+.nav-box .container nav ul{
+    display: flex;
+    justify-content: center; /* 在水平方向上居中对齐 */
+    margin-top: 146px;
+    gap: 20px;
+}
+.nav-box .container nav ul .nav1{
+    display: flex;
+    margin-top: 146px;
+    gap: 20px;
+    justify-content: space-between;
+}
+.nav-box .container nav ul .pic img{
+    aspect-ratio: 0.74;
+    object-fit: auto;
+    object-position: center;
+    width: 173px;
+    align-self: stretch;
+    max-width: 100%;
+    
+}
+.nav-box .container nav ul .nav2{
+    display: flex;
+    margin-top: 146px;
+    gap: 20px;
+    justify-content: space-between;
+}
+.nav-box .container nav .r-red-line img{
+    aspect-ratio: 25;
+    object-fit: auto;
+    object-position: center;
+    width: 333px;
+    margin-top: 152px;
+    max-width: 100%;
+}
+.index-nav{
+    position: relative;
+    z-index: 1;
+    /* background-color: orange; */
+    /* height: 100px; */
+
+}
+.index-nav li{
+    list-style: none;
+    text-decoration: none;
+    display: inline-block;
+}
+.nav-box .container nav .index-nav .nav1 li a{
+    letter-spacing: 5px;
+    text-decoration: none;
+    font-weight: normal;
+    color: #1c1c1c;
+}
+.nav-box .container nav .index-nav .nav2 li a{
+    letter-spacing: 5px;
+    text-decoration: none;
+    font-weight: normal;
+    color: #1c1c1c;
+}
+/* 關於我們 */
+.about-us .container{
+    margin-top: 150px; 
+    margin-left: 370px;
+    
+}
+.about-us .container img{
+    width: 1250px;
+    height: 800px;    
+}
+/* 購物車 */
+.online-shop .position {
+    position: fixed;
+bottom: 50%;
+left: 0;
+width: 100%;
+display: flex;
+justify-content: right;
+}
+.online-shop .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 250px;
+    background-color: #E9625F;
+    border-radius: 10px 0px 0px 10px;
+}
+.online-shop .container ul{
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+.online-shop .container ul li{
+    list-style: none;
+    margin-bottom: 10px;
+}
+.online-shop .container ul li .box{
+    border-bottom: 2px solid #F9F9F9;
+}
+.online-shop .container ul li a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+}
+.online-shop .container ul li a img{
+    margin-bottom: 5px;
+}
+.online-shop .container ul li span{
+    color: #F9F9F9;
+}
+/* 立春亭的堅持 */
+.stick .container{
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    height: 35vh; 
+}
+.stick .container .text{
+    font-weight: normal;
+    font-family: "Noto Serif TC";
+}
+.stick .container .text .rii{
+    color: #E6231C;
+}
+.stick .container .text .shun{
+    color: #E6231C;
+}
+.stick .container .text .tei{
+    color: #E6231C;
+}
+.stick .container .text .no{
+    color: #1c1c1c;
+}
+.stick .container .text .ko{
+    color: #1c1c1c;
+}
+.stick .container .text .da{
+    color: #1c1c1c;
+}
+.stick .container .text .wa{
+    color: #1c1c1c;
+}
+.stick .container .text .ri{
+    color: #1c1c1c;
+}
+/* (目前做不出來，用圖片代替)堅持---味覺、製法、食材 */
+.stick-sop .container{
+    gap: 20px;
+    display: flex;
+}
+/* .stick-sop .container .aji-all{
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 33%;
+    margin-left: 0px;
+}
+.stick-sop .container .aji-all .aji-all1{
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    color: #000;
+    font-weight: 400;
+    white-space: nowrap;
+}
+.stick-sop .container .aji-all .aji-all1 .aji-pic img{
+    aspect-ratio: 1;
+    object-fit: auto;
+    object-position: center;
+    width: 100%;
+}
+.aji{
+    align-self: center;
+    display: flex;
+    margin-top: 33px;
+    align-items: start;
+    gap: 20px;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+.title-aji{
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    font-size: 40px;
+    color: #e6231c;
+    font-weight: 700;
+} */
+.stick-sop .container{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+}
+.stick-sop .container img{
+    width: 900px;
+    height: 696px;    
+}
+/* 熱門商品推薦 */
+/* .hot-items .container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh;
+    
+}
+.hot-items .container .text .title {
+    display: flex;
+    flex-direction: column; 
+}
+.hot-items .container .text .title h2 {
+    font-size: 40px;
+}
+.hot-items .container .text .title .pic img {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    z-index: -1;
+} */
+.hot-items .container{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+}
+.hot-items .container .pic img{
+    width: 300px;
+    height: 108px;
+}
+
+.hot-items .container{
+    display: flex;
+    justify-content: center; 
+    flex-direction: column;
+    align-items: center; 
+    /* height: 150vh;  */
+    margin-top: 150px;
+    margin-bottom: 100px;
+}
+.hot-items .container .pic img{
+    width: 300px;
+    height:108px;
+}
+.hot-items .container .item ul{
+    display: flex;
+    list-style: none;
+}
+.hot-items .container .item ul li{
+    /* display: flex; */
+    flex-direction: row;
+    margin: 30px;
+}
+.hot-items .container .item ul li a {
+    text-decoration: none; 
+}
+.hot-items .container .item ul li a img{
+    height: 250px;
+    width: 250px;
+}
+.hot-items .container .item ul li a p {
+    text-align: center;
+    text-decoration: none; 
+    font-size: 16px; 
+    color: #1c1c1c; 
+}
+/* 分店一覽 */
+.branch .container{
+    display: flex;
+    justify-content: center; 
+    flex-direction: column;
+    align-items: center; 
+    /* height:200vh;  */
+    margin-bottom: 600px;
+}
+.branch .container .pic img{
+    width: 215px;
+    height: 109px;
+}
+.branch .container .shop-list ul{
+    display: flex;
+    list-style: none;
+}
+.branch .container .shop-list ul li{
+    /* display: flex; */
+    flex-direction: row;
+    margin: 30px;
+}
+.shop-list ul li a {
+    text-decoration: none; 
+}
+.shop-list ul li a p {
+    text-align: center;
+    text-decoration: none; 
+    font-size: 16px; 
+    color: #1c1c1c; 
+}
+/* 頁尾 */
+footer {
+    position: relative; /* 确保 footer 元素是相对定位的 */
+}
+footer .container{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+>>>>>>> 8012abf50bbe8f492231c757df1ab88f1217863e
