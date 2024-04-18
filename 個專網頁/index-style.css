@@ -17,6 +17,10 @@ body{
 .header-pic .container{
     justify-content: center;
     position: relative;
+    width: 100%;
+}
+.header-pic .container .pic img{
+    width: 100%;
 }
 .header-pic .text{
     font-size: 30px;
