@@ -6,6 +6,7 @@ body{
     /* background-color: rgba(249,249,249); 白灰背景 */
     background-image: url('picture/dust-bgpic.png');
     background-repeat: repeat; 
+    font-family: "Noto Sans TC";
 }
 /* 頭header */
 .header{
@@ -34,6 +35,11 @@ body{
     bottom: 20%;
     right: 0px;
     z-index: 1;
+}
+@media screen and (max-width: 768px) {
+    .header-pic .text{
+        font-size: 20px;
+    }
 }
 /* 導覽列 */
 .nav-box .container{
@@ -89,6 +95,11 @@ body{
     align-self: stretch;
     max-width: 100%;
     
+}
+@media screen and (max-width: 768px) {
+    .nav-box .container nav ul .pic img{
+        display: none;
+    }
 }
 .nav-box .container nav ul .nav2{
     display: flex;
