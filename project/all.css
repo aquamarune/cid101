@@ -16,6 +16,7 @@ body{
 }
 .header-pic{
     display: flex;
+    /* margin-bottom: 20px; */
 }
 .header-pic .container{
     justify-content: center;
@@ -34,7 +35,7 @@ body{
     position: absolute;
     bottom: 20%;
     right: 0px;
-    z-index: 1;
+    z-index: 1;   /* ------------------------------------------------------------層級1 */
 }
 @media screen and (max-width: 768px) {
     .header-pic .text{
@@ -139,4 +140,67 @@ body{
     text-decoration: none;
     font-weight: normal;
     color: #1c1c1c;
+}
+/* 購物車------->>>線上訂位 */
+.online-shop .position {
+    position: fixed;
+    bottom: 50%;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: right;
+}
+.online-shop .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 135px;
+    background-color: #E9625F;
+    border-radius: 10px 0px 0px 10px;
+}
+.online-shop .container ul{
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+.online-shop .container ul li{
+    list-style: none;
+    margin-bottom: 10px;
+}
+.online-shop .container ul li a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+}
+.online-shop .container ul li span{
+    color: #F9F9F9;
+    margin-top: 10px;
+}
+.online-shop .container ul li p{
+    writing-mode: vertical-lr;
+    letter-spacing: 5px; /* 字間距 */
+    color: #F9F9F9;
+    margin-top: 10px;
+}
+/* 關於我們 */
+.about-us .container-bcg-wave{/* 定位 */
+    /* display: flex;
+    justify-content: right;
+    height: 500px;
+} */
+.about-us .container-bcg-wave .bcg-wave{ /* 背景生成 */
+    /* background-image: url('picture/arches-bgpic.png');
+    background-repeat: repeat;
+    height: 100%;
+    width: 60%;
+    margin-top: 120px;
+} */
+
+.about-us .container-bcg-circle .bcg-circle{
+    height: 500px;
+    width: 500px;
+    background-color: #E9625F;
 }
