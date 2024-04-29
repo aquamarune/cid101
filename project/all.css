@@ -56,6 +56,11 @@ body{
     letter-spacing: 3.84px;
     justify-content: space-between;
 }
+@media screen and (max-width: 768px) {
+    .nav-box .container{
+        font-size: 13px;
+    }
+}
 .nav-box .container nav{
     height: 100px;
     /* background-color: aqua; */
@@ -74,12 +79,27 @@ body{
     margin-top: 260px;
     width: 100%;
 }
+@media screen and (max-width: 768px) {
+    .nav-box .container nav .l-red-line img{
+        margin-top: 100px;
+        width: 100%;
+    }
+}
 .nav-box .container nav ul{
     display: flex;
     justify-content: center; /* 在水平方向上居中對齊 */
     margin-top: 146px;
     gap: 50px;
     width: 100vw;
+}
+@media screen and (max-width: 768px) {
+    .nav-box .container nav ul{
+    display: flex;
+    justify-content: center;  
+    gap: 5px;
+    margin-right: 21%;
+    margin-top: -30px;
+    }
 }
 .nav-box .container nav ul .nav1{
     display: flex;
@@ -117,6 +137,15 @@ body{
     /* 剛剛改100% */
     width: 100%;
 }
+@media screen and (max-width: 768px) {
+    .nav-box .container nav .r-red-line img {
+        position: absolute;
+        right: 0;
+        margin-top: 48px;
+        width: 22%;
+    }
+}
+
 .index-nav{
     position: relative;
     z-index: 1;
@@ -149,16 +178,40 @@ body{
     width: 100%;
     display: flex;
     justify-content: right;
+    z-index: 2; /* ------------------------------------------------------------層級2 */
+}
+@media screen and (max-width: 768px) {
+    .online-shop .position {
+    position: fixed;
+    bottom: 50%;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    z-index: 2;
+    }
 }
 .online-shop .container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 45px;
-    height: 135px;
+    width: 20px;
+    height: 100px;
     background-color: #E9625F;
     border-radius: 10px 0px 0px 10px;
+}
+@media screen and (max-width: 768px) {
+    .online-shop .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 100px;
+    background-color: #E9625F;
+    border-radius: 10px 0px 0px 10px;
+    }
 }
 .online-shop .container ul{
     padding: 0;
