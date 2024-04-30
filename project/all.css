@@ -196,8 +196,8 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 20px;
-    height: 100px;
+    width: 35px;
+    height: 150px;
     background-color: #E9625F;
     border-radius: 10px 0px 0px 10px;
 }
@@ -266,5 +266,15 @@ body{
 }
 .container-bcg-scircle img{
     width: 10%;
+}
+/* 立春亭的堅持 */
+.stick .container .text{
+    
+}
+.stick .container .text p{
+    writing-mode: vertical-lr;
+    font-family: Noto Serif TC;
+    align-items: center; 
+
 }
 
