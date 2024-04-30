@@ -6,9 +6,9 @@ body{
     /* background-color: rgba(249,249,249); 白灰背景 */
     background-image: url('picture/dust-bgpic.png');
     background-repeat: repeat; 
-    font-family: "Noto Sans TC";
+    font-family: "Noto Sans TC"; /*Noto Serif TC*/
 }
-/* 頭header */
+/* -------------------頭header------------------- */
 .header{
     display: flex;
     flex-direction: column;
@@ -42,9 +42,9 @@ body{
         font-size: 20px;
     }
 }
-/* 導覽列 */
+/* -------------------導覽列------------------- */
 .nav-box .container{
-    z-index: 10;
+    z-index: 10;  /* ------------------------------------------------------------層級10 */
     display: flex;
     margin-top: -82px;
     width: 100%;
@@ -115,7 +115,6 @@ body{
     width: 130px; /* 調寬、高其一，就可以調比例 */
     align-self: stretch;
     max-width: 100%;
-    
 }
 @media screen and (max-width: 768px) {
     .nav-box .container nav ul .pic img{
@@ -148,7 +147,7 @@ body{
 
 .index-nav{
     position: relative;
-    z-index: 1;
+    z-index: 1;  /* ------------------------------------------------------------層級1 */
     /* background-color: orange; */
     /* height: 100px; */
 
@@ -170,7 +169,7 @@ body{
     font-weight: normal;
     color: #1c1c1c;
 }
-/* 購物車------->>>線上訂位 */
+/* -------------------購物車------->>>線上訂位------------------- */
 .online-shop .position {
     position: fixed;
     bottom: 50%;
@@ -188,7 +187,7 @@ body{
     width: 100%;
     display: flex;
     justify-content: right;
-    z-index: 2;
+    z-index: 2; /* ------------------------------------------------------------層級2 */
     }
 }
 .online-shop .container {
@@ -196,8 +195,8 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 35px;
-    height: 150px;
+    width: 38px;
+    height: 135px;
     background-color: #E9625F;
     border-radius: 10px 0px 0px 10px;
 }
@@ -238,43 +237,159 @@ body{
     color: #F9F9F9;
     margin-top: 10px;
 }
-/* 關於我們 */
+/* -------------------關於我們------------------- */
+.about-us{
+    position: relative;
+}
+/*扇紋背景*/
 .about-us .container-bcg-wave{/* 定位 */
     display: flex;
     justify-content: right;
-    height: 500px;
+    height: 700px;
 }
 .about-us .container-bcg-wave .bcg-wave{ /* 背景生成 */
     background-image: url('picture/arches-bgpic.png');
     background-repeat: repeat;
     height: 100%;
-    width: 60%;
+    width: 63%;
     margin-top: 120px;
 }
-.container-bcg-circle{
+/*扇紋背景下的大圓*/
+.about-us .container-bcg-circle{
     display: flex;
     justify-content: right;
 }
-.container-bcg-circle img{
-    height: auto;
+.about-us .container-bcg-circle li{
+    list-style: none;
     width: 60%;
+	height: 18vh;
+	border-radius: 40%;
+	background-color: #E6231C;
     margin-top: 20px;
-    z-index: -1;
+    z-index: -1;  /* ------------------------------------------------------------層級-1 */
 }
-.container-bcg-scircle{
+/*扇紋背景上的小圓*/
+.about-us .container-bcg-scircle{
     display: flex;
 }
-.container-bcg-scircle img{
-    width: 10%;
+.about-us .container-bcg-scircle li{
+    list-style: none;
+    width: 19vh;
+	height: 19vh;
+	border-radius: 50%;
+	background-color: #E6231C;
+    position: absolute;
+    bottom:36.555555%;
+    left: 35.9%;
+    z-index: 1; /* ------------------------------------------------------------層級1 */
 }
-/* 立春亭的堅持 */
-.stick .container .text{
-    
+/*師傅的圖*/
+.about-us .master-pic{
+    position: absolute;
+    bottom: 15%;
+    left: 39%;
+    z-index: 3;  /* ------------------------------------------------------------層級3 */
 }
-.stick .container .text p{
+.about-us .master-pic img{
+    width: 60%;
+}
+/*師傅的手*/
+.about-us .hand-pic{
+    position: absolute;
+    bottom:40%;
+    left: 18%;
+    z-index: 2;  /* ------------------------------------------------------------層級2 */
+}
+.about-us .hand-pic img{
+    width: 60%;
+}
+/* 立春亭について */
+.about-us .tsuite .container{
+    position: absolute;
+    bottom: 48%;
+    left: 45%;
+}
+.about-us .tsuite .container p{
     writing-mode: vertical-lr;
     font-family: Noto Serif TC;
+    letter-spacing: 8px;
+}
+.about-us .tsuite .container .riishuntei{
+    color: #E6231C;
+}
+/*關於我們的文字*/
+.about-us .text {
+    text-align: center;
+    position: absolute;
+    bottom: 250px;;
+    right: 12%;
+    font-family: Noto Serif TC;
+    color: #1c1c1c;
+    letter-spacing: 5px; /* 字間距 */
+    line-height: 2.5
+}
+.about-us .text .title{
+    font-size: 20px;
+}
+.about-us .text .content{
+    font-size: 14px;
+}
+/* -------------------立春亭のこだわり------------------- */
+.stick .container {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
     align-items: center; 
-
+    margin: 5vh;
+}
+.stick .container .text p{
+    writing-mode: vertical-lr; /*直書方向*/
+    font-family: Noto Serif TC;
+    letter-spacing: 10px;
+}
+.stick .container .text .riishuntei{
+    color: #E6231C;
+}
+/* -------------------立春亭的堅持------------------- */
+/*圖片下的圓 和 圖片*/
+/* .stick-item .aji-pic .pic-container {
+    position: relative;
+    margin: 10px;
+}
+.stick-item .aji-pic .pic-container .circle li{
+    list-style: none;
+    width: 185px;
+	height: 185px;
+	border-radius: 50%;
+	background-color: #E6231C;
+    position: absolute;
+    top: 5px;
+    left: -5px;
+    z-index: -1;
+}
+.stick-item .aji-pic .pic-container .pic img{
+    width: 185px;
+    position: absolute;
+    z-index: 1;
+} */
+/*圖片下的文字*/
+.aji-text{
+    display: flex;
+    flex-direction: row;
+    font-family: Noto Serif TC;
+}
+.aji-text .text-container{
+    writing-mode: vertical-rl
+}
+.aji-text .text-container .title h4{
+    color: #E6231C;
+    font-size: 20px;
+    font-weight: bold; /* 粗體 */
+    letter-spacing: 15px; /* 字間距 */
+}
+.aji-text .text-container .content p{
+    color: #1c1c1c;
+    font-style: normal;
+    letter-spacing: 5px; /* 字間距 */
 }
 
