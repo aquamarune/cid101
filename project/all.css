@@ -351,8 +351,26 @@ body{
     color: #E6231C;
 }
 /* -------------------立春亭的堅持------------------- */
+.stick-item{
+    display: flex;
+    justify-content: center; /* 水平置中 */
+    align-items: center; /* 垂直置中 */
+}
+.stick-item .container{
+    display: flex;
+    flex-direction: row;
+}
+/*味覺*/
 /*圖片下的圓 和 圖片*/
-/* .stick-item .aji-pic .pic-container {
+.stick-item .aji{
+    display: flex;
+    flex-direction: column;
+    margin: 0px 80px;
+}
+.stick-item .aji-pic{
+    margin-bottom: 210px;
+}
+.stick-item .aji-pic .pic-container {
     position: relative;
     margin: 10px;
 }
@@ -371,7 +389,7 @@ body{
     width: 185px;
     position: absolute;
     z-index: 1;
-} */
+} 
 /*圖片下的文字*/
 .aji-text{
     display: flex;
@@ -381,15 +399,138 @@ body{
 .aji-text .text-container{
     writing-mode: vertical-rl
 }
-.aji-text .text-container .title h4{
+.aji-text .text-container{
+    margin-left: 60px;
+}
+.aji-text .text-container .title .title-container h4{
     color: #E6231C;
-    font-size: 20px;
+    font-size: 28px;
     font-weight: bold; /* 粗體 */
     letter-spacing: 15px; /* 字間距 */
+}
+.aji-text .text-container .title .title-container{
+    display: flex;
+    flex-direction: column;
+}
+.aji-text .text-container .title .title-container .line-container{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+.aji-text .text-container .title .title-container .line-container li{
+    list-style: none;
+    width: 1px;
+    height: 100px;
+    background-color: #E6231C;
 }
 .aji-text .text-container .content p{
     color: #1c1c1c;
     font-style: normal;
     letter-spacing: 5px; /* 字間距 */
 }
-
+/*製法*/
+/*圖片下的圓 和 圖片*/
+.stick-item .make{
+    display: flex;
+    flex-direction: column;
+    margin: 0px 80px;
+}
+.stick-item .make-pic{
+    margin-bottom: 210px;
+}
+.stick-item .make-pic .pic-container {
+    position: relative;
+    margin: 10px;
+}
+.stick-item .make-pic .pic-container .circle li{
+    list-style: none;
+    width: 185px;
+	height: 185px;
+	border-radius: 50%;
+	background-color: #E6231C;
+    position: absolute;
+    top: 5px;
+    left: -5px;
+    z-index: -1;
+}
+.stick-item .make-pic .pic-container .pic img{
+    width: 185px;
+    position: absolute;
+    z-index: 1;
+} 
+/*圖片下的文字*/
+.make-text{
+    display: flex;
+    flex-direction: row;
+    font-family: Noto Serif TC;
+}
+.make-text .text-container{
+    writing-mode: vertical-rl
+}
+.make-text .text-container{
+    margin-left: 60px;
+}
+.make-text .text-container .title h4{
+    color: #E6231C;
+    font-size: 28px;
+    font-weight: bold; /* 粗體 */
+    letter-spacing: 15px; /* 字間距 */
+}
+.make-text .text-container .content p{
+    color: #1c1c1c;
+    font-style: normal;
+    letter-spacing: 5px; /* 字間距 */
+}
+/*食材*/
+/*圖片下的圓 和 圖片*/
+.stick-item .food{
+    display: flex;
+    flex-direction: column;
+    margin: 0px 80px;
+}
+.stick-item .food-pic{
+    margin-bottom: 210px;
+}
+.stick-item .food-pic .pic-container {
+    position: relative;
+    margin: 10px;
+}
+.stick-item .food-pic .pic-container .circle li{
+    list-style: none;
+    width: 185px;
+	height: 185px;
+	border-radius: 50%;
+	background-color: #E6231C;
+    position: absolute;
+    top: 5px;
+    left: -5px;
+    z-index: -1;
+}
+.stick-item .food-pic .pic-container .pic img{
+    width: 185px;
+    position: absolute;
+    z-index: 1;
+} 
+/*圖片下的文字*/
+.food-text{
+    display: flex;
+    flex-direction: row;
+    font-family: Noto Serif TC;
+}
+.food-text .text-container{
+    writing-mode: vertical-rl
+}
+.food-text .text-container{
+    margin-left: 60px;
+}
+.food-text .text-container .title h4{
+    color: #E6231C;
+    font-size: 28px;
+    font-weight: bold; /* 粗體 */
+    letter-spacing: 15px; /* 字間距 */
+}
+.food-text .text-container .content p{
+    color: #1c1c1c;
+    font-style: normal;
+    letter-spacing: 5px; /* 字間距 */
+}
