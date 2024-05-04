@@ -145,7 +145,6 @@ body{
         width: 22%;
     }
 }
-
 .index-nav{
     position: relative;
     z-index: 1;  /* ------------------------------------------------------------層級1 */
@@ -164,11 +163,19 @@ body{
     font-weight: normal;
     color: #1c1c1c;
 }
+.nav-box .container nav .index-nav .nav1 li :hover{
+    background-color: #E9625F;
+    color: #F9F9F9;
+}
 .nav-box .container nav .index-nav .nav2 li a{
     letter-spacing: 5px;
     text-decoration: none;
     font-weight: normal;
     color: #1c1c1c;
+}
+.nav-box .container nav .index-nav .nav2 li :hover{ 
+    background-color: #E9625F;
+    color: #F9F9F9;
 }
 /* -------------------購物車------->>>線上訂位------------------- */
 .online-shop .position {
@@ -190,6 +197,9 @@ body{
     justify-content: right;
     z-index: 2; /* ------------------------------------------------------------層級2 */
     }
+}
+.online-shop .container :hover{
+    filter:alpha(Opacity=80);-moz-opacity:0.8;opacity: 0.8;
 }
 .online-shop .container {
     display: flex;
@@ -590,6 +600,13 @@ body{
     text-decoration: none; 
     letter-spacing: 3px; /* 字間距 */
 }
+.hot-items .container .item-list .list-container ul li .pic-container .pic a:hover img{
+    filter:alpha(Opacity=80);-moz-opacity:0.8;opacity: 0.8;
+}
+.hot-items .container .item-list .list-container ul li .pic-container .pic a :hover{
+    color: #E9625F;
+}
+
 .hot-items .container .item-list .list-container ul li .pic-container .pic p{
     font-size: 12px;
     color: #1c1c1c;
@@ -644,6 +661,9 @@ body{
 .branch .container .shop-list ul li img{
     width: 200px;
 }
+.branch .container .shop-list ul li img :hover{
+    background-color: #E9625F;
+}
 .branch .container .shop-list ul{
     display: flex;
     list-style: none;
@@ -653,9 +673,6 @@ body{
     flex-direction: row;
     margin: 30px;
 }
-.shop-list ul li a {
-    text-decoration: none; 
-}
 .shop-list ul li a  {
     text-align: center;
     text-decoration: none; 
@@ -663,6 +680,12 @@ body{
     font-size: 12px; 
     letter-spacing: 3px; /* 字間距 */
     color: #1c1c1c; 
+}
+.shop-list ul li a:hover img{
+    filter:alpha(Opacity=80);-moz-opacity:0.8;opacity: 0.8;
+}
+.shop-list ul li a :hover{
+    color: #E9625F;
 }
 /* 頁尾 */
 footer section .container{
@@ -777,12 +800,6 @@ footer section .container .copyright p{
     display: inline-block;
 }
 .product-nav-box .container nav .index-nav .nav1 li a{
-    letter-spacing: 5px;
-    text-decoration: none;
-    font-weight: normal;
-    color: #1c1c1c;
-}
-.product-nav-box .container nav .index-nav .nav2 li a{
     letter-spacing: 5px;
     text-decoration: none;
     font-weight: normal;
