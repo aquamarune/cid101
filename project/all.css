@@ -26,8 +26,8 @@ body{
 .header-pic .container .pic img{
     width: 100%;
 }
-.header-pic .text{
-    font-size: 30px;
+.header-pic .text h1{
+    font-size: 28px;
     color: #fff;
     font-weight: bold; /* 粗體 */
     font-family: "Noto Serif TC";
@@ -328,8 +328,8 @@ body{
     letter-spacing: 5px; /* 字間距 */
     line-height: 2.5
 }
-.about-us .text .title{
-    font-size: 20px;
+.about-us .text .title h2{
+    font-size: 26px;
 }
 .about-us .text .content{
     font-size: 14px;
@@ -402,9 +402,9 @@ body{
 .aji-text .text-container{
     margin-left: 60px;
 }
-.aji-text .text-container .title .title-container h4{
+.aji-text .text-container .title .title-container h3{
     color: #E6231C;
-    font-size: 28px;
+    font-size: 24px;
     font-weight: bold; /* 粗體 */
     letter-spacing: 15px; /* 字間距 */
 }
@@ -470,9 +470,9 @@ body{
 .make-text .text-container{
     margin-left: 60px;
 }
-.make-text .text-container .title h4{
+.make-text .text-container .title h3{
     color: #E6231C;
-    font-size: 28px;
+    font-size: 24px;
     font-weight: bold; /* 粗體 */
     letter-spacing: 15px; /* 字間距 */
 }
@@ -523,9 +523,9 @@ body{
 .food-text .text-container{
     margin-left: 60px;
 }
-.food-text .text-container .title h4{
+.food-text .text-container .title h3{
     color: #E6231C;
-    font-size: 28px;
+    font-size: 24px;
     font-weight: bold; /* 粗體 */
     letter-spacing: 15px; /* 字間距 */
 }
@@ -533,4 +533,172 @@ body{
     color: #1c1c1c;
     font-style: normal;
     letter-spacing: 5px; /* 字間距 */
+}
+/* -------------------熱門商品推薦------------------- */
+.hot-items{
+    margin: 100px auto;
+}
+.hot-items .container{
+    text-align: center;
+}
+.hot-items .container .title{
+    margin: 30px;
+}
+.hot-items .container .title .text h2{
+    font-family: Noto Serif TC;
+    font-size: 26px;
+    color: #1c1c1c;
+    letter-spacing: 5px; /* 字間距 */
+    font-weight: bold; /* 粗體 */
+    position: relative; 
+    z-index: 1; 
+    /* ------------------------------------------------------------層級1 */
+}
+.hot-items .container .title .pic img{
+    width: 80px; 
+    position: absolute;
+    right: 500px;
+    top: 2440px;
+    z-index: 0; 
+    /* ------------------------------------------------------------層級0 */
+}
+.hot-items .container .item-list .list-container{
+    width: 65%;
+    margin: 0 auto;
+}
+.hot-items .container .item-list .list-container ul{
+    display: flex;
+    flex-wrap: wrap; /* 讓item自動換行 */
+    gap: 10px;
+    justify-content: center; /* 水平居中 */
+    
+}
+.hot-items .container .item-list .list-container ul li{
+    list-style: none;
+    margin: 35px;
+    text-align: center; /* 水平居中 */
+}
+.hot-items .container .item-list .list-container ul li .pic-container{
+    position: relative;
+}
+.hot-items .container .item-list .list-container ul li .pic-container .pic img{
+    width: 185px;
+}
+.hot-items .container .item-list .list-container ul li .pic-container .pic a{
+    text-decoration: none; 
+    letter-spacing: 3px; /* 字間距 */
+}
+.hot-items .container .item-list .list-container ul li .pic-container .pic p{
+    font-size: 12px;
+    color: #1c1c1c;
+    margin-top: 5px;
+}
+/*li*/
+.hot-items .container .item-list .list-container ul li .pic-container .text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 12px;
+    color: #1c1c1c;
+    writing-mode: vertical-lr; /*直書方向*/
+}
+.hot-items .container .item-list .list-container ul li .pic-container .text p{
+    letter-spacing: 3px; /* 字間距 */
+}
+/* 店鋪一覽 */
+.branch{
+    background-image: url('picture/dust-branch-bcg.png');
+    background-repeat: repeat;
+    height: 35vw;
+}
+.branch .container{
+    margin: 100px auto;
+    display: flex;
+    justify-content: center; 
+    flex-direction: column;
+    align-items: center; 
+    /* height:200vh;  */
+}
+.branch .container .title{
+    position: relative;
+}
+.branch .container .title .text h2{
+    font-family: Noto Serif TC;
+    font-size: 26px;
+    color: #1c1c1c;
+    letter-spacing: 5px; /* 字間距 */
+    font-weight: bold; /* 粗體 */
+    margin: 50px 0 20px 0;
+    position: relative; 
+    z-index: 1; /* ------------------------------------------------------------層級1 */
+}
+.branch .container .title .pic img{
+    width: 80px;
+    position: absolute;
+    top: 50px;
+    left: 80px;
+    z-index: 0; /* ------------------------------------------------------------層級0 */
+}
+.branch .container .shop-list ul li img{
+    width: 200px;
+}
+.branch .container .shop-list ul{
+    display: flex;
+    list-style: none;
+}
+.branch .container .shop-list ul li{
+    /* display: flex; */
+    flex-direction: row;
+    margin: 30px;
+}
+.shop-list ul li a {
+    text-decoration: none; 
+}
+.shop-list ul li a  {
+    text-align: center;
+    text-decoration: none; 
+    font-family: Noto Serif TC;
+    font-size: 12px; 
+    letter-spacing: 3px; /* 字間距 */
+    color: #1c1c1c; 
+}
+/* 頁尾 */
+footer section .container{
+    background-color: #252525;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* 水平居中 */
+    align-items: center;
+    height: 20vw;
+}
+footer section .container .footer-logo img{
+    width: 50px;
+    margin: 10px auto;
+}
+footer section .container .text p{
+    font-size: 14px;
+    font-family: Noto Serif TC;
+    color: #FFFFFF;
+    letter-spacing: 5px; /* 字間距 */
+    margin: 10px auto;
+}
+footer section .container .social-icon{
+    display: flex;
+    flex-direction: row;
+    margin: 10px auto;
+}
+footer section .container .social-icon .line-icon{
+    margin: 0 10px;
+}
+footer section .container .social-icon .facebook-icon{
+    margin: 0 10px;
+}
+footer section .container .social-icon .instagram-icon{
+    margin: 0 10px;
+}
+footer section .container .copyright p{
+    font-size: 12px;
+    color: #FFFFFF;
+    margin: 10px auto;
+    letter-spacing: 3px; /* 字間距 */
 }
