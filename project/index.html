@@ -13,6 +13,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Noto+Serif+TC&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">   <!-- AOS動畫套件 -->
 </head>
 <body>
     <input type="checkbox" name="" id="menu-switch">
@@ -73,6 +74,7 @@
     </header>
     <!-- 關於我們 -->
     <section class="about-us">
+    <div calss="fade-in" data-aos="fade-up" data-aos-duration="3000">
         <div class="container-bcg-wave">
             <div class="bcg-wave"></div>
         </div>
@@ -104,18 +106,30 @@
                 <p>讓每一位品嚐的人都能感受到日本文化的深厚底蘊</p>
             </div>
         </div>
+    </div>
     </section>
     <!-- 立春亭のこだわり -->
-    <section class="stick"> 
+    <section class="stick">
+    <div class="" id="triggerAnchor"></div>
+    <div class="fade-in"
+    data-aos="fade-up"
+    data-aos-anchor="#triggerAnchor"
+    data-aos-duration="3000">
         <div class="container">
             <div class="text">
                 <p class="riishuntei">立春亭</p>
                 <p class="nokodawari">のこだわり</p>
             </div>
         </div>
+    </div>
     </section>
     <!-- 立春亭的堅持 -->
     <section class="stick-item">
+    <div class="" id="triggerAnchor"></div>
+    <div class="fade-in"
+    data-aos="fade-up"
+    data-aos-anchor="#triggerAnchor"
+    data-aos-duration="3000">
         <div class="container">
             <div class="aji">
                 <div class="aji-pic">
@@ -182,9 +196,15 @@
                 </div>
             </div>
         </div>
+    </div>
     </section>
     <!-- 熱門商品推薦 -->
     <section class="hot-items">
+    <div class="" id="items-anime"></div>
+    <div class="fade-in"
+    data-aos="fade-up"
+    data-aos-anchor="#items-anime"
+    data-aos-duration="3000">
         <div class="container">
             <div class="title">
                 <div class="text">
@@ -193,7 +213,6 @@
                 <div class="pic">
                     <img src="picture/point.png" alt="紅色圓點">
                 </div>
-                
             </div>
             <div class="item-list">
                 <div class="list-container">
@@ -250,9 +269,15 @@
                 </div>
             </div>
         </div>
+    </div>
     </section>
     <!-- 店鋪一覽 -->
     <section class="branch">
+    <div class="" id="branch-anime"></div>
+    <div class="fade-in"
+    data-aos="fade-up"
+    data-aos-anchor="#branch-anime"
+    data-aos-duration="3000">
         <div class="container">
             <div class="title">
                 <div class="text">
@@ -272,6 +297,7 @@
                 </ul>
             </div>
         </div>
+    </div>
     </section>
     <!-- 頁尾 -->
     <footer>
@@ -296,5 +322,10 @@
         </section>
     </footer>
 
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

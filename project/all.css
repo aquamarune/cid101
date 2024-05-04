@@ -704,3 +704,87 @@ footer section .container .copyright p{
     margin: 10px auto;
     letter-spacing: 3px; /* 字間距 */
 }
+
+/*product*/
+.product-nav-box .container{
+    z-index: 10;  /* ------------------------------------------------------------層級10 */
+    display: flex;
+    margin-top: -82px;
+    width: 100%;
+    align-items: end;
+    gap: 20px;
+    font-size: 20px;
+    color: #1c1c1c;
+    font-weight: 400;
+    letter-spacing: 3.84px;
+    justify-content: space-between;
+    background-color: #F9F9F9;
+}
+.product-nav-box .container nav{
+    height: 100px;
+    /* background-color: aqua; */
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content:center ;
+    align-items: center;
+    background-color: #E6231C;
+}
+.product-nav-box .container nav .l-red-line img{
+    aspect-ratio: 25;
+    object-fit: auto;
+    object-position: center;
+    /* width: 150px; */
+    margin-top: 260px;
+    width: 100%;
+    background-color: aqua;
+}
+.product-nav-box .container nav ul{
+    display: flex;
+    justify-content: center; /* 在水平方向上居中對齊 */
+    /* margin-top: 146px; */
+    gap: 50px;
+    width: 100%;
+    background-color: aquamarine;
+}
+.product-nav-box .container nav ul .nav1{
+    display: flex;
+    margin-top: 130px;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.product-nav-box .container nav .r-red-line img{
+    aspect-ratio: 25;
+    object-fit: auto;
+    object-position: center;
+    /* width: 150px; */
+    margin-top: 260px;
+    /* 剛剛改100% */
+    width: 100%;
+}
+.product-nav-box .index-nav{
+    position: relative;
+    z-index: 1;  /* ------------------------------------------------------------層級1 */
+    /* background-color: orange; */
+    /* height: 100px; */
+
+}
+.product-nav-box .index-nav li{
+    list-style: none;
+    text-decoration: none;
+    display: inline-block;
+}
+.product-nav-box .container nav .index-nav .nav1 li a{
+    letter-spacing: 5px;
+    text-decoration: none;
+    font-weight: normal;
+    color: #1c1c1c;
+}
+.product-nav-box .container nav .index-nav .nav2 li a{
+    letter-spacing: 5px;
+    text-decoration: none;
+    font-weight: normal;
+    color: #1c1c1c;
+}
