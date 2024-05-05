@@ -1207,3 +1207,40 @@ footer section .container .copyright p{
     text-align: center;
     padding: 5px 0;
 }
+/*======================================================={contact}{聯絡我們}=======================================================*/
+.contact-list{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.contact-list .paragraph{
+    margin: 30px 0;
+}
+.contact-list .paragraph p{
+    font-size: 24px;
+    font-family: noto serif TC;
+    text-align: center;
+}
+.contact-list .container ul{
+    display: flex;
+    flex-direction: row;
+}
+.contact-list .container ul li{
+    list-style: none;
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contact-list .container ul li h2{
+    font-family: noto serif TC;
+    font-size: 26px;
+    margin-bottom: 25px;
+}
+.contact-list .container ul li p{
+    font-size: 12px;
+    font-family: noto serif TC;
+    text-align: center;
+    padding: 5px 0;
+}
