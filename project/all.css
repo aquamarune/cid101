@@ -8,7 +8,7 @@ body{
     background-repeat: repeat; 
     font-family: "Noto Sans TC"; /*Noto Serif TC*/
 }
-/*index*/
+/*======================================================={index}=======================================================*/
 /* -------------------頭header------------------- */
 .header{
     display: flex;
@@ -624,7 +624,7 @@ body{
 .hot-items .container .item-list .list-container ul li .pic-container .text p{
     letter-spacing: 3px; /* 字間距 */
 }
-/* 店鋪一覽 */
+/* -------------------店鋪一覽 ------------------- */
 .branch{
     background-image: url('picture/dust-branch-bcg.png');
     background-repeat: repeat;
@@ -687,7 +687,7 @@ body{
 .shop-list ul li a :hover{
     color: #E9625F;
 }
-/* 頁尾 */
+/* -------------------頁尾 ------------------- */
 footer section .container{
     background-color: #252525;
     display: flex;
@@ -727,24 +727,24 @@ footer section .container .copyright p{
     margin: 10px auto;
     letter-spacing: 3px; /* 字間距 */
 }
-
-/*product*/
+/*======================================================={product}{產品介紹}=======================================================*/
+/* -------------------{產品介紹}導覽列------------------- */
 .product-nav-box .container{
     z-index: 10;  /* ------------------------------------------------------------層級10 */
     display: flex;
-    margin-top: -82px;
     width: 100%;
-    align-items: end;
-    gap: 20px;
+    /* align-items: end; */
+    /* gap: 20px; */
     font-size: 20px;
     color: #1c1c1c;
-    font-weight: 400;
-    letter-spacing: 3.84px;
+    /* font-weight: 400; */
+    /* letter-spacing: 3.84px; */
     justify-content: space-between;
     background-color: #F9F9F9;
+    height: 50px;
 }
 .product-nav-box .container nav{
-    height: 100px;
+    height: 50px;
     /* background-color: aqua; */
     width: 100%;
     display: flex;
@@ -752,39 +752,47 @@ footer section .container .copyright p{
     position: relative;
     justify-content:center ;
     align-items: center;
-    background-color: #E6231C;
+    /* background-color: #E6231C; */
 }
 .product-nav-box .container nav .l-red-line img{
     aspect-ratio: 25;
     object-fit: auto;
-    object-position: center;
+    /* object-position: center; */
     /* width: 150px; */
-    margin-top: 260px;
+    /* margin-top: 100px; */
     width: 100%;
-    background-color: aqua;
 }
 .product-nav-box .container nav ul{
     display: flex;
-    justify-content: center; /* 在水平方向上居中對齊 */
+    justify-content: right; /* 在水平方向上靠右對齊 */
     /* margin-top: 146px; */
-    gap: 50px;
+    /* gap: 100px; */
     width: 100%;
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
+    padding: 0 20px;
 }
 .product-nav-box .container nav ul .nav1{
     display: flex;
-    margin-top: 130px;
+    /* margin-top: 50px; */
     gap: 20px;
     justify-content: space-between;
 }
-
+.product-nav-box .container nav .logo{
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 0 20px;
+}
+.product-nav-box .container nav .logo img{
+    width: 100px;
+}
 .product-nav-box .container nav .r-red-line img{
     aspect-ratio: 25;
-    object-fit: auto;
-    object-position: center;
+    /* object-fit: auto; */
+    /* object-position: center; */
     /* width: 150px; */
-    margin-top: 260px;
-    /* 剛剛改100% */
+    /* margin-top: 100px; */
     width: 100%;
 }
 .product-nav-box .index-nav{
@@ -792,16 +800,342 @@ footer section .container .copyright p{
     z-index: 1;  /* ------------------------------------------------------------層級1 */
     /* background-color: orange; */
     /* height: 100px; */
-
 }
 .product-nav-box .index-nav li{
     list-style: none;
     text-decoration: none;
     display: inline-block;
+    margin: 0 7px;
 }
 .product-nav-box .container nav .index-nav .nav1 li a{
-    letter-spacing: 5px;
+    font-size: 15px;
+    letter-spacing: 3px;
     text-decoration: none;
     font-weight: normal;
     color: #1c1c1c;
+}
+/* -------------------{產品介紹}麵包屑----可共用--------------- */
+.breadcrumbList {
+    /* border-bottom: 3px solid #1c1c1c; */
+    box-shadow: inset 0 0 11px 3px rgba(#000000, 0.6);
+    .breadcrumb {
+        display: flex;
+        li {
+        padding: 20px 10px;
+        & + li {
+            padding-left: 0;
+        }
+        & + li::before {
+            content: "/"; /*+選取器，選到自己的下一層元素*/
+            color: #1c1c1c;
+            padding-right: 10px;
+        }
+        &:last-child a {
+            color: #E6231C; /*選取到最後一個元素*/
+        }
+        a {
+            color: #1c1c1c;
+            font-weight: 100;
+            font-size: 16px;
+            cursor: pointer;
+            &:hover {
+            color: #E9625F;
+            }
+        }
+        }
+    }
+}
+.breadcrumbList{
+    font-size: 12px; /* "/" */
+    /* background-color: aqua; */
+}
+.breadcrumbList .container ol li{   
+    list-style: none;
+    
+}
+.breadcrumbList .container ol li a{
+    text-decoration: none;
+    font-size: 12px;
+    font-family: Noto Serif TC;
+}
+/* -------------------{產品介紹}banner-{內頁共用}------------------ */
+.banner{
+    margin-bottom: 100px;
+}
+.banner .space{
+    width: 100%;
+    height: 150px;
+    background-color: #F7F9FE;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* 垂直置中 */
+    position: relative;
+}
+.banner .space .title p{
+    font-size: 16px;
+    font-family: noto serif TC;
+    color: #1c1c1c;
+    writing-mode: vertical-lr; /*直書方向*/
+    letter-spacing: 10px;
+    font-weight: bold;
+}
+.banner .space .pic{
+    position: absolute;
+    right: 210px;
+    bottom: -5px;
+}
+.banner .space .pic img{
+    width: 250px;
+}
+/* -------------------{產品介紹}生菓子namagashi------------------- */
+.namagashi-text .container h2{
+    font-family: "Noto Serif TC";
+    font-size: 24px;
+    letter-spacing: 5px;
+    color: #1c1c1c;
+}
+.namagashi-text .container{
+    margin: 0 200px;
+    border-bottom: 1px solid #1c1c1c;
+}
+.namagashi-items .container .box {
+    display: flex;
+    justify-content: left;
+    margin: 50px 250px 100px 250px;
+}
+.namagashi-items .container .box ul{
+    display: flex;
+}
+.namagashi-items .container .box ul li{
+    list-style: none;
+    margin: 0 30px;
+}
+.namagashi-items .container .box ul li a{
+    text-decoration: none;
+    color: #1c1c1c;
+}
+.namagashi-items .container .box ul li a img{
+    width: 200px;
+}
+.namagashi-items .container .box ul li a p {
+    text-align: center;
+    font-size: 12px; 
+    letter-spacing: 3px;
+}
+/* -------------------{產品介紹}半生菓子hannamagashi------------------ */
+.hannamagashi-text .container h2{
+    font-family: "Noto Serif TC";
+    font-size: 24px;
+    letter-spacing: 5px;
+    color: #1c1c1c;
+}
+.hannamagashi-text .container{
+    margin: 0 200px;
+    border-bottom: 1px solid #1c1c1c;
+}
+.hannamagashi-items .container .box {
+    display: flex;
+    justify-content: left;
+    margin: 50px 250px 100px 250px;
+}
+.hannamagashi-items .container .box ul{
+    display: flex;
+}
+.hannamagashi-items .container .box ul li{
+    list-style: none;
+    margin: 0 30px;
+}
+.hannamagashi-items .container .box ul li a{
+    text-decoration: none;
+    color: #1c1c1c;
+}
+.hannamagashi-items .container .box ul li a img{
+    width: 200px;
+}
+.hannamagashi-items .container .box ul li a p {
+    text-align: center;
+    font-size: 12px; 
+    letter-spacing: 3px;
+}
+/* -------------------{產品介紹}乾菓子kangashi------------------ */
+.kangashi-text .container h2{
+    font-family: "Noto Serif TC";
+    font-size: 24px;
+    letter-spacing: 5px;
+    color: #1c1c1c;
+}
+.kangashi-text .container{
+    margin: 0 200px;
+    border-bottom: 1px solid #1c1c1c;
+}
+.kangashi-items .container .box {
+    display: flex;
+    justify-content: left;
+    margin: 50px 250px 100px 250px;
+}
+.kangashi-items .container .box ul{
+    display: flex;
+}
+.kangashi-items .container .box ul li{
+    list-style: none;
+    margin: 0 30px;
+}
+.kangashi-items .container .box ul li a{
+    text-decoration: none;
+    color: #1c1c1c;
+}
+.kangashi-items .container .box ul li a img{
+    width: 200px;
+}
+.kangashi-items .container .box ul li a p {
+    text-align: center;
+    font-size: 12px; 
+    letter-spacing: 3px;
+}
+/*======================================================={jyunamagashi}{上升菓子}=======================================================*/
+/* -------------------{上升菓子}導覽列------------------- */
+.jyunamagashi-nav-box .container{
+    z-index: 10;  /* ------------------------------------------------------------層級10 */
+    display: flex;
+    width: 100%;
+    font-size: 20px;
+    color: #1c1c1c;
+    justify-content: space-between;
+    background-color: #F9F9F9;
+    height: 50px;
+}
+.jyunamagashi-nav-box .container nav{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content:center ;
+    align-items: center;
+}
+.jyunamagashi-nav-box .container nav .l-red-line img{
+    aspect-ratio: 25;
+    object-fit: auto;
+    width: 100%;
+}
+.jyunamagashi-nav-box .container nav ul{
+    display: flex;
+    justify-content: right; /* 在水平方向上靠右對齊 */
+    width: 100%;
+    padding: 0 20px;
+}
+.jyunamagashi-nav-box .container nav ul .nav1{
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+.jyunamagashi-nav-box .container nav .logo{
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 0 20px;
+}
+.jyunamagashi-nav-box .container nav .logo img{
+    width: 100px;
+}
+.jyunamagashi-nav-box .container nav .r-red-line img{
+    aspect-ratio: 25;
+    width: 100%;
+}
+.jyunamagashi-nav-box .index-nav{
+    position: relative;
+    z-index: 1;  /* ------------------------------------------------------------層級1 */
+}
+.jyunamagashi-nav-box .index-nav li{
+    list-style: none;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 7px;
+}
+.jyunamagashi-nav-box .container nav .index-nav .nav1 li a{
+    font-size: 15px;
+    letter-spacing: 3px;
+    text-decoration: none;
+    font-weight: normal;
+    color: #1c1c1c;
+}
+/*商品列表*/
+.jyunamagashi-list{
+    margin: 100px auto;
+}
+.jyunamagashi-list .container{
+    text-align: center;
+}
+.jyunamagashi-list .container .title{
+    margin: 30px;
+    position: relative; 
+}
+.jyunamagashi-list .container .title .text h2{
+    font-family: Noto Serif TC;
+    font-size: 26px;
+    color: #1c1c1c;
+    letter-spacing: 5px; /* 字間距 */
+    font-weight: bold; /* 粗體 */
+    position: relative; 
+    z-index: 1; 
+    /* ------------------------------------------------------------層級1 */
+}
+.jyunamagashi-list .container .title .pic img{
+    width: 80px; 
+    position: absolute;
+    right: 470px;
+    top:  1px;
+    z-index: 0; 
+    /* ------------------------------------------------------------層級0 */
+}
+.jyunamagashi-list .container .item-list .list-container{
+    width: 65%;
+    margin: 0 auto;
+}
+.jyunamagashi-list .container .item-list .list-container ul{
+    display: flex;
+    flex-wrap: wrap; /* 讓item自動換行 */
+    gap: 10px;
+    justify-content: center; /* 水平居中 */
+    
+}
+.jyunamagashi-list .container .item-list .list-container ul li{
+    list-style: none;
+    margin: 35px;
+    text-align: center; /* 水平居中 */
+}
+.jyunamagashi-list .container .item-list .list-container ul li .pic-container{
+    position: relative;
+}
+.jyunamagashi-list .container .item-list .list-container ul li .pic-container .pic img{
+    width: 185px;
+}
+.jyunamagashi-list .container .item-list .list-container ul li .pic-container .pic a{
+    text-decoration: none; 
+    letter-spacing: 3px; /* 字間距 */
+}
+.jyunamagashi-list .container .item-list .list-container ul li .pic-container .pic a:hover img{
+    filter:alpha(Opacity=80);-moz-opacity:0.8;opacity: 0.8;
+}
+.jyunamagashi-list .container .item-list .list-container ul li .pic-container .pic a :hover{
+    color: #E9625F;
+}
+
+.jyunamagashi-list .container .item-list .list-container ul li .pic-container .pic p{
+    font-size: 12px;
+    color: #1c1c1c;
+    margin-top: 5px;
+}
+/*li*/
+.jyunamagashi-list .container .item-list .list-container ul li .pic-container .text{
+    position: absolute;
+    top: 0;
+    left: -16px;
+    font-size: 12px;
+    color: #1c1c1c;
+    writing-mode: vertical-lr; /*直書方向*/
+}
+.jyunamagashi-list .container .item-list .list-container ul li .pic-container .text p{
+    letter-spacing: 3px; /* 字間距 */
 }
