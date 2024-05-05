@@ -914,8 +914,14 @@ footer section .container .copyright p{
     text-decoration: none;
     color: #1c1c1c;
 }
+.namagashi-items .container .box ul li a :hover{
+    color: #E9625F;
+}
 .namagashi-items .container .box ul li a img{
     width: 200px;
+}
+.namagashi-items .container .box ul li a:hover img {
+    filter:alpha(Opacity=80);-moz-opacity:0.8;opacity: 0.8;
 }
 .namagashi-items .container .box ul li a p {
     text-align: center;
@@ -949,8 +955,14 @@ footer section .container .copyright p{
     text-decoration: none;
     color: #1c1c1c;
 }
+.hannamagashi-items .container .box ul li a :hover{
+    color: #E9625F;
+}
 .hannamagashi-items .container .box ul li a img{
     width: 200px;
+}
+.hannamagashi-items .container .box ul li a:hover img {
+    filter:alpha(Opacity=80);-moz-opacity:0.8;opacity: 0.8;
 }
 .hannamagashi-items .container .box ul li a p {
     text-align: center;
@@ -984,8 +996,14 @@ footer section .container .copyright p{
     text-decoration: none;
     color: #1c1c1c;
 }
+.kangashi-items .container .box ul li a :hover{
+    color: #E9625F;
+}
 .kangashi-items .container .box ul li a img{
     width: 200px;
+}
+.kangashi-items .container .box ul li a:hover img {
+    filter:alpha(Opacity=80);-moz-opacity:0.8;opacity: 0.8;
 }
 .kangashi-items .container .box ul li a p {
     text-align: center;
