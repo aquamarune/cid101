@@ -992,8 +992,8 @@ footer section .container .copyright p{
     font-size: 12px; 
     letter-spacing: 3px;
 }
-/*======================================================={jyunamagashi}{上升菓子}=======================================================*/
-/* -------------------{上升菓子}導覽列------------------- */
+/*======================================================={jyunamagashi}{上生菓子}=======================================================*/
+/* -------------------{上生菓子}導覽列------------------- */
 .jyunamagashi-nav-box .container{
     z-index: 10;  /* ------------------------------------------------------------層級10 */
     display: flex;
@@ -1060,9 +1060,9 @@ footer section .container .copyright p{
     font-weight: normal;
     color: #1c1c1c;
 }
-/*商品列表*/
+/* -------------------{上生菓子}商品列表------------------- */
 .jyunamagashi-list{
-    margin: 100px auto;
+    margin: 100px 0 150px 0;
 }
 .jyunamagashi-list .container{
     text-align: center;
@@ -1138,4 +1138,43 @@ footer section .container .copyright p{
 }
 .jyunamagashi-list .container .item-list .list-container ul li .pic-container .text p{
     letter-spacing: 3px; /* 字間距 */
+}
+/*======================================================={news}{最新消息}=======================================================*/
+.news .container{
+    display: flex;
+    justify-content: center; /* 水平居中 */
+    width: 100%;
+}
+.news .container ol li{
+    width: 880px;
+    list-style: none;
+    font-size: 16px;
+    border-bottom: 1px solid #1c1c1c;
+    margin: 20px 0;
+    font-family: noto serif TC;
+}
+.news .container ol li a{
+    text-decoration: none;
+    color: #1c1c1c;
+}
+.news .container ol li a:hover{
+    color: #E6231C;
+}
+.news .container ol li a .date{
+    padding: 0 10px;
+}
+.news .container ol li span1 {
+    font-size: 10px;
+    padding: 0 15px;
+    border: 1px solid #1c1c1c;
+    background-color: #D7BAE2;
+}
+.news .container ol li span2 {
+    font-size: 10px;
+    padding: 0 15px;
+    border: 1px solid #1c1c1c;
+    background-color: #E98D66;
+}
+.news .container ol li a .title{
+    padding: 0 10px;
 }
