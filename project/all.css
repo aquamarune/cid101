@@ -1144,6 +1144,7 @@ footer section .container .copyright p{
     display: flex;
     justify-content: center; /* 水平居中 */
     width: 100%;
+    margin: 100px 0;
 }
 .news .container ol li{
     width: 880px;
@@ -1157,8 +1158,8 @@ footer section .container .copyright p{
     text-decoration: none;
     color: #1c1c1c;
 }
-.news .container ol li a:hover{
-    color: #E6231C;
+.news .container ol li :hover{
+    color: #E9625F;
 }
 .news .container ol li a .date{
     padding: 0 10px;
@@ -1177,4 +1178,32 @@ footer section .container .copyright p{
 }
 .news .container ol li a .title{
     padding: 0 10px;
+}
+/*======================================================={branch}{店鋪一覽}=======================================================*/
+.branch-list{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.branch-list .container ul{
+    display: flex;
+    flex-direction: row;
+}
+.branch-list .container ul li{
+    list-style: none;
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.branch-list .container ul li img{
+    width: 200px;
+    margin: 0 auto; /* 置中 */
+}
+.branch-list .container ul li p{
+    font-size: 12px;
+    font-family: noto serif TC;
+    text-align: center;
+    padding: 5px 0;
 }
