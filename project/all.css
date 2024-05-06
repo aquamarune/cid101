@@ -8,6 +8,72 @@ body{
     background-repeat: repeat; 
     font-family: "Noto Sans TC"; /*Noto Serif TC*/
 }
+/*======================================================={mb手機版導覽列 }=======================================================*/
+.mb-nav .container .logo img{
+    width: 100px;
+}
+.mb-nav .container ul{
+    list-style: none; 
+    padding-left: 0; 
+}
+.mb-nav .container a{
+    text-decoration: none;
+}
+.mb-nav{
+    background: #eee;
+    box-shadow: 0px 1px 3px #00000088;
+    &::after {
+    content: "";
+    display: block;
+    clear: both;
+    }
+logo{ /* Logo */
+    float: left;
+    padding-left: 50px;
+    line-height: 50px;
+    }
+}
+/* 隱藏 checkbox */
+.mb-nav input{
+    display: none;
+}
+  /* 漢堡按鈕 */
+.mb-nav label{
+    float: right;
+    padding-right: 50px;
+    line-height: 50px;
+
+    img{
+    width: 30px;   
+    vertical-align: middle;
+    }
+}
+  /* 選單列 */
+.mb-nav .menu{
+    clear: both;
+    background: #fff;
+    li{
+    text-align: center;
+    border-bottom: 1px solid #efefef;
+    a{
+        display: block;
+        padding: 10px 0;
+        font-size: 18px;
+        color: #5d5d5d;
+        &:hover{
+        background: #5d5d5d;
+        color: #fff;
+        }
+    }
+    }
+}
+.mb-nav .menu {
+    max-height: 0;
+    overflow: hidden;
+}
+.mb-nav input:checked ~ .menu {
+    max-height: 300px;
+}
 /*======================================================={index}=======================================================*/
 /* -------------------頭header------------------- */
 .header{
@@ -177,6 +243,8 @@ body{
     background-color: #E9625F;
     color: #F9F9F9;
 }
+
+/*======================================================={線上訂位}=======================================================*/
 /* -------------------購物車------->>>線上訂位------------------- */
 .online-shop .position {
     position: fixed;
@@ -1235,12 +1303,14 @@ footer section .container .copyright p{
     margin-bottom: 50px;
 }
 .contact-list .paragraph{
-    margin: 30px 0;
+    margin: 30px 0 50px 0;
 }
 .contact-list .paragraph p{
     font-size: 24px;
     font-family: noto serif TC;
     text-align: center;
+    letter-spacing: 3px;
+    
 }
 .contact-list .container ul{
     display: flex;
@@ -1259,10 +1329,10 @@ footer section .container .copyright p{
     font-size: 26px;
     margin-bottom: 25px;
     letter-spacing: 3px;
-    text-decoration: underline #E6231C;
 }
 .contact-list .container ul li p{
     font-size: 12px;
+    letter-spacing: 1px;
     font-family: noto serif TC;
     text-align: center;
     padding: 5px 0;
