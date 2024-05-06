@@ -14,6 +14,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Noto+Serif+TC&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">   <!-- AOS動畫套件 -->
+
+    
 </head>
 <body>
     <!-- 最新消息導覽列 -->
@@ -30,7 +32,7 @@
                     <div class="nav1">
                         <li><a href="product.html">產品介紹</a></li>
                         <li><a href="news.html">最新消息</a></li>
-                        <li><a href="#">常見問題</a></li>
+                        <li><a href="faq.html">常見問題</a></li>
                         <li><a href="shop-branch.html">店鋪一覽</a></li>
                         <li><a href="contact-us.html">聯絡我們</a></li>
                     </div>
@@ -74,12 +76,41 @@
                 <p>常見問題</p>
             </div>
             <div class="pic">
-                <img src="picture/re-yellow.png" alt="黃色和菓子">
+                <img src="picture/re-green.png" alt="綠色和菓子">
             </div>
         </div>
     </section>
     <!--FAQ列表 -->
-    
+    <section class="fqa">
+        <div class="container">
+            <ul>
+                <li>
+                    <div class="qa-title">和菓子是什麼？它們和其他甜點有什麼不同之處？</div>
+                    <div class="qa-content">和菓子是日本的傳統甜點，以精緻的外觀和細膩的口感著稱。與其他甜點相比，和菓子更注重原料的純淨和季節性的味道，呈現出獨特的日式美學。</div>
+                </li>
+                <li>
+                    <div class="qa-title">和菓子的製作過程是怎樣的？有哪些傳統的製作方法？</div>
+                    <div class="qa-content">製作和菓子的過程通常包括煮豆、製作糰子、成型和裝飾等步驟。傳統的製作方法包括手工搗豆、傳統模具成型和手工彩繪等。</div>
+                </li>
+                <li>
+                    <div class="qa-title">和菓子的食材有哪些？它們如何影響口味和質地？</div>
+                    <div class="qa-content">和菓子的食材有白豆、糖、水等基本成分，也包括紅豆、抹茶等天然素材。食材的品質和比例直接影響和菓子的口味和質地，不同的原料組合會帶來不同的風味和口感體驗。</div>
+                </li>
+                <li>
+                    <div class="qa-title">和菓子的保存期限是多久？如何保存它們以確保最佳口感？</div>
+                    <div class="qa-content">冷凍可保存7天，冷藏2天。常溫下請2小時內食用完畢，請勿回凍以確保商品品質 建議搭配無糖飲料(茶、咖啡...等)風味更佳</div>
+                </li>
+                <li>
+                    <div class="qa-title">和菓子在日本文化中有什麼樣的地位和意義？</div>
+                    <div class="qa-content">和菓子在日本文化中扮演著重要角色，象徵著季節的變化和節日的慶祝。它們不僅是美食，更是藝術品，反映了日本人對自然和美的追求。和菓子也常用於茶道，體現禪宗思想的精髓。</div>
+                </li>
+                <li>
+                    <div class="qa-title">和菓子在節慶和特殊場合中扮演著怎樣的角色？</div>
+                    <div class="qa-content">和菓子在節慶和特殊場合中扮演著重要角色，作為慶祝活動的必備美食。它們不僅象徵著季節的變化和豐收，還代表著人們對美好祝福的表達。無論是新年、婚禮還是其他慶典，和菓子都是不可或缺的美味享受。</div>
+                </li>
+            </ul>
+        </div>
+    </section>
     
     <!-- 頁尾 -->
     <footer>
@@ -104,5 +135,19 @@
         </section>
     </footer>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script>
+            $(".qa-title").click(function() {
+                $(".qa-content").slideUp();
+                $(".qa-title.on").removeClass("on");
+                $(this).next().stop().slideDown();
+                $(this).stop().addClass("on");
+            });
+            
+        </script>
+
+
+
 </body>
 </html>

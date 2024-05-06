@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .fqa .container ul{
+            list-style:none;
+            width:500px;
+            padding:30px 0;
+            margin:0 auto
+        }
+        .fqa .container .qa-title{
+            background: #adacac;;
+            color:#fff;
+            padding:10px 15px;
+            border-radius:6px;
+            margin-bottom:10px;
+            cursor:pointer}
+
+        .fqa .container .qa-title.on{
+            background:#E9625F;
+        }
+        .fqa .container .qa-content{
+            display: none;
+            background:#fff;
+            padding:20px;
+            border-radius:6px;
+            margin:8px 0;
+        }
+    </style>
+</head>
+<body>
+    <section class="fqa">
+        <div class="container">
+            <ul>
+                <li>
+                    <div class="qa-title">What is Lorem Ipsum?</div>
+                    <div class="qa-content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
+                </li>
+                <li>
+                    <div class="qa-title">Why do we use it?</div>
+                    <div class="qa-content">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</div>
+                </li>
+            </ul>
+        </div>
+
+    </section>
+
+
+
+
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script>
+
+            $(".qa-title").click(function() {
+                $(".qa-content").slideUp();
+                $(".qa-title.on").removeClass("on");
+                $(this).next().stop().slideDown();
+                $(this).stop().addClass("on");
+            });
+            
+        </script>
+</body>
+</html>

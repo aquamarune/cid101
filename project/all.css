@@ -856,11 +856,11 @@ footer section .container .copyright p{
 .breadcrumbList .container ol li a{
     text-decoration: none;
     font-size: 12px;
-    font-family: Noto Serif TC;
+    font-weight: normal;
 }
 /* -------------------{產品介紹}banner-{內頁共用}------------------ */
 .banner{
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 .banner .space{
     width: 100%;
@@ -1176,8 +1176,11 @@ footer section .container .copyright p{
     text-decoration: none;
     color: #1c1c1c;
 }
-.news .container ol li :hover{
+.news .container ol li a:hover{
     color: #E9625F;
+    position: relative; /* 當滑鼠經過超連結時，超連結往右下位移1像素 */
+    top: 1px;
+    left: 1px;
 }
 .news .container ol li a .date{
     padding: 0 10px;
@@ -1255,6 +1258,8 @@ footer section .container .copyright p{
     font-family: noto serif TC;
     font-size: 26px;
     margin-bottom: 25px;
+    letter-spacing: 3px;
+    text-decoration: underline #E6231C;
 }
 .contact-list .container ul li p{
     font-size: 12px;
@@ -1263,4 +1268,31 @@ footer section .container .copyright p{
     padding: 5px 0;
 }
 /*======================================================={FAQ}{常見問題}=======================================================*/
+.fqa .container ul{
+    list-style:none;
+    width:500px;
+    padding:30px 0;
+    margin:0 auto
+}
+.fqa .container .qa-title{
+    font-family: noto serif TC;
+    letter-spacing: 1px;
+    background: #cdc8c4;
+    color:#403f3b;
+    padding:10px 15px;
+    border-radius:6px;
+    margin-bottom:10px;
+    cursor:pointer}
 
+.fqa .container .qa-title.on{
+    background:#E9625F;
+    color: #F9F9F9;
+}
+.fqa .container .qa-content{
+    display: none;
+    letter-spacing: 1px;
+    background:#fff;
+    padding:20px;
+    border-radius:6px;
+    margin:8px 0;
+}
