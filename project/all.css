@@ -847,7 +847,7 @@ body{
 }
 @media screen and (max-width:767px) {
     .hot-items .container .item-list .list-container{
-        width: 80%;
+        width: 95%;
     }
 }
 @media screen and (max-width:390px) {
