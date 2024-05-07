@@ -984,7 +984,7 @@ body{
 }
 @media screen and (max-width:767px) {
     .branch .container .shop-list ul li img{
-        width: 100px;
+        width: 185px;
     }
 }
 .branch .container .shop-list ul li img :hover{
