@@ -90,7 +90,7 @@ body{
         width: 90%;
     }
 }
-@media screen and (min-width:390px) {
+@media screen and (max-width:430px) {
     .mb-nav .container .logo img {
         width: 80%;
         margin-top: 10px;
@@ -131,7 +131,7 @@ body{
         font-size: 20px;
     }
 }
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 430px) {
     .header-pic .text h1{
         font-size: 10px;
         letter-spacing: 5px;
@@ -270,7 +270,7 @@ body{
     background-color: #E9625F;
     border-radius: 50% ;
 }
-@media screen and (max-width:390px) {
+@media screen and (max-width:430px) {
     .mb-online .mb-position .container{
         width: 50px;
         height: 50px;
@@ -289,7 +289,7 @@ body{
     color: #F9F9F9;
     margin-bottom: 12px;
 }
-@media screen and (max-width:390px) {
+@media screen and (max-width:430px) {
     .mb-online .mb-position .container a{
         font-size: 8px;
     }
@@ -395,7 +395,7 @@ body{
         margin-top: 0;
     }
 }
-@media screen and (max-width:390px) {
+@media screen and (max-width:430px) {
     .about-us .container-bcg-wave{
         height: 450px;
     }
@@ -429,7 +429,7 @@ body{
         z-index: -1;
     }
 }
-@media screen and (max-width:390px) {
+@media screen and (max-width:430px) {
     .about-us .container-bcg-circle li{
         width: 100%;
         height: 10vh;
@@ -475,7 +475,7 @@ body{
         z-index: 3;
     }
 }
-@media screen and (max-width:390px) {
+@media screen and (max-width:430px) {
     .about-us .master-pic{
         display: none;
     }
@@ -517,7 +517,7 @@ body{
         z-index: 4;
     }
 }
-@media screen and (max-width:390px) {
+@media screen and (max-width:430px) {
     .about-us .tsuite .container{
         display: none;
     }
@@ -538,7 +538,7 @@ body{
         margin-right: 30px;
     }
 }
-@media screen and (max-width:390px) {
+@media screen and (max-width:430px) {
     .about-us .text{
         margin: -50px auto;
     }
@@ -551,7 +551,7 @@ body{
         font-size: 23px;
     }
 }
-@media screen and (max-width:390px) {
+@media screen and (max-width:430px) {
     .about-us .text .title h2{
         font-size: 20px;
     }
@@ -565,7 +565,7 @@ body{
         letter-spacing: 3px; /* 字間距 */
     }
 }
-@media screen and (max-width:390px) {
+@media screen and (max-width:430px) {
     .about-us .text .content{
         font-size:10px;
         letter-spacing: 3px; /* 字間距 */
@@ -812,7 +812,7 @@ body{
     z-index: 1; 
     /* ------------------------------------------------------------層級1 */
 }
-@media screen and (max-width:390px) {
+@media screen and (max-width:430px) {
     .hot-items .container .title .text h2{
         font-size: 20px;
     }
@@ -832,7 +832,7 @@ body{
         right: 210px;
     }
 }
-@media screen and (max-width:390px) {
+@media screen and (max-width:430px) {
     .hot-items .container .title .pic img{
         width: 60px; 
         position: absolute;
@@ -850,7 +850,7 @@ body{
         width: 95%;
     }
 }
-@media screen and (max-width:390px) {
+@media screen and (max-width:430px) {
     .hot-items .container .item-list .list-container{
         width: 95%;
     }
@@ -872,7 +872,7 @@ body{
         margin: 54px;
     }
 }
-@media screen and (max-width:390px) {
+@media screen and (max-width:430px) {
     .hot-items .container .item-list .list-container ul li{
         margin: 30px;
     }
@@ -883,7 +883,7 @@ body{
 .hot-items .container .item-list .list-container ul li .pic-container .pic img{
     width: 185px;
 }
-@media screen and (max-width:390px) {
+@media screen and (max-width:430px) {
     .hot-items .container .item-list .list-container ul li .pic-container .pic img{
         width: 100px;
     }
@@ -904,7 +904,7 @@ body{
     color: #1c1c1c;
     margin-top: 5px;
 }
-@media screen and (max-width:390px) {
+@media screen and (max-width:430px) {
     .hot-items .container .item-list .list-container ul li .pic-container .pic p{
         font-size: 10px;
         letter-spacing: 2px;
@@ -919,7 +919,7 @@ body{
     color: #1c1c1c;
     writing-mode: vertical-lr; /*直書方向*/
 }
-@media screen and (max-width:390px) {
+@media screen and (max-width:430px) {
     .hot-items .container .item-list .list-container ul li .pic-container .text{
         font-size: 6px;
     }
@@ -1028,7 +1028,7 @@ body{
 .shop-list ul li a :hover{
     color: #E9625F;
 }
-@media screen and (max-width:390px) {
+@media screen and (max-width:430px) {
     .branch{
         display: none;
     }
@@ -1048,7 +1048,7 @@ footer section .container{
         height: 35vw;
     }
 }
-@media screen and (max-width:390px) {
+@media screen and (max-width:430px) {
     footer section .container{
         height: 65vw;
     }
@@ -1064,7 +1064,7 @@ footer section .container .text p{
     letter-spacing: 5px; /* 字間距 */
     margin: 10px auto;
 }
-@media screen and (max-width:390px) {
+@media screen and (max-width:430px) {
     footer section .container .text p{
         font-size: 8px;
         letter-spacing: 3px;
@@ -1075,7 +1075,7 @@ footer section .container .social-icon{
     flex-direction: row;
     margin: 10px auto;
 }
-@media screen and (max-width:390px) {
+@media screen and (max-width:430px) {
     footer section .container .social-icon{
         margin: 8px auto;
     }
@@ -1095,7 +1095,7 @@ footer section .container .copyright p{
     margin: 10px auto;
     letter-spacing: 3px; /* 字間距 */
 }
-@media screen and (max-width:390px) {
+@media screen and (max-width:430px) {
     footer section .container .copyright p{
         font-size: 8px;
     letter-spacing: 2px; /* 字間距 */
