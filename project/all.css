@@ -971,12 +971,6 @@ body{
         margin-right: 50px;
     }
 }
-@media screen and (max-width:390px) {
-    .branch .container .title .text h2{
-        font-size: 20px;
-        margin-left: 60px;
-    }
-}
 .branch .container .title .pic img{
     width: 80px;
     position: absolute;
@@ -984,14 +978,7 @@ body{
     left: 80px;
     z-index: 0; /* ------------------------------------------------------------層級0 */
 }
-@media screen and (max-width:390px) {
-    .branch .container .title .pic img{
-        width: 60px; 
-        position: absolute;
-        left: 60%;
-        z-index: 0; 
-    }
-}
+
 .branch .container .shop-list ul li img{
     width: 200px;
 }
