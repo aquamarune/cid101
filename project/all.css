@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 body{
     /* background-color: rgba(249,249,249); 白灰背景 */
@@ -9,70 +10,85 @@ body{
     font-family: "Noto Sans TC"; /*Noto Serif TC*/
 }
 /*======================================================={mb手機版導覽列 }=======================================================*/
-.mb-nav .container .logo img{
+.mb-nav {
+    position: relative;
+    top: 0;
+    width: 100%;
+}
+.mb-nav .container {
+    display: flex;
+    justify-content: space-between;
+}
+.mb-nav .container .logo {
     width: 100px;
 }
-.mb-nav .container ul{
-    list-style: none; 
-    padding-left: 0; 
+.mb-nav .container .logo img {
+    width: 100px;
+    margin: 5px 0 0 10px;
 }
-.mb-nav .container a{
+.mb-nav .container a {
     text-decoration: none;
 }
-.mb-nav{
+.mb-nav {
     background: #eee;
     box-shadow: 0px 1px 3px #00000088;
-    &::after {
+}
+.mb-nav::after {
     content: "";
     display: block;
     clear: both;
-    }
-logo{ /* Logo */
-    float: left;
-    padding-left: 50px;
-    line-height: 50px;
-    }
 }
-/* 隱藏 checkbox */
-.mb-nav input{
+.mb-nav input {
     display: none;
 }
-  /* 漢堡按鈕 */
-.mb-nav label{
-    float: right;
+.mb-nav label {
     padding-right: 50px;
     line-height: 50px;
-
-    img{
+}
+.mb-nav label img {
     width: 30px;   
     vertical-align: middle;
-    }
-}
-  /* 選單列 */
-.mb-nav .menu{
-    clear: both;
-    background: #fff;
-    li{
-    text-align: center;
-    border-bottom: 1px solid #efefef;
-    a{
-        display: block;
-        padding: 10px 0;
-        font-size: 18px;
-        color: #5d5d5d;
-        &:hover{
-        background: #5d5d5d;
-        color: #fff;
-        }
-    }
-    }
 }
 .mb-nav .menu {
+    background: #f1f0ec;
+    list-style: none; 
+    padding-left: 0; 
+    width: 20%;
+    position: absolute; 
+    right: -20%;
+    z-index: 3;
     max-height: 0;
     overflow: hidden;
+    transition: 1s;
+}
+.mb-nav .menu li {
+    text-align: center;
+    border-bottom: 1px solid #1c1c1c;
+}
+.mb-nav .menu li a{
+    display: block;
+    padding: 10px 0;
+    font-size: 14px;
+    color: #1c1c1c;
+    text-align: center;
+    letter-spacing: 3px;
+}
+.mb-nav .menu li a:hover {
+    background: #E7DBAA;
+    color: #fff;
 }
 .mb-nav input:checked ~ .menu {
-    max-height: 300px;
+    max-height: 1000px;
+    right: 0;
+}
+@media screen and (min-width:767px) {
+    .mb-nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 90%;
+    }
 }
 /*======================================================={index}=======================================================*/
 /* -------------------頭header------------------- */
@@ -105,7 +121,7 @@ logo{ /* Logo */
     z-index: 1;   /* ------------------------------------------------------------層級1 */
 }
 @media screen and (max-width: 768px) {
-    .header-pic .text{
+    .header-pic .text h1{
         font-size: 20px;
     }
 }
@@ -122,11 +138,6 @@ logo{ /* Logo */
     font-weight: 400;
     letter-spacing: 3.84px;
     justify-content: space-between;
-}
-@media screen and (max-width: 768px) {
-    .nav-box .container{
-        font-size: 13px;
-    }
 }
 .nav-box .container nav{
     height: 100px;
@@ -146,27 +157,12 @@ logo{ /* Logo */
     margin-top: 260px;
     width: 100%;
 }
-@media screen and (max-width: 768px) {
-    .nav-box .container nav .l-red-line img{
-        margin-top: 100px;
-        width: 100%;
-    }
-}
 .nav-box .container nav ul{
     display: flex;
     justify-content: center; /* 在水平方向上居中對齊 */
     margin-top: 146px;
     gap: 50px;
-    width: 100vw;
-}
-@media screen and (max-width: 768px) {
-    .nav-box .container nav ul{
-    display: flex;
-    justify-content: center;  
-    gap: 5px;
-    margin-right: 21%;
-    margin-top: -30px;
-    }
+    width: 100%;
 }
 .nav-box .container nav ul .nav1{
     display: flex;
@@ -183,11 +179,6 @@ logo{ /* Logo */
     align-self: stretch;
     max-width: 100%;
 }
-@media screen and (max-width: 768px) {
-    .nav-box .container nav ul .pic img{
-        display: none;
-    }
-}
 .nav-box .container nav ul .nav2{
     display: flex;
     margin-top: 130px;
@@ -203,20 +194,11 @@ logo{ /* Logo */
     /* 剛剛改100% */
     width: 100%;
 }
-@media screen and (max-width: 768px) {
-    .nav-box .container nav .r-red-line img {
-        position: absolute;
-        right: 0;
-        margin-top: 48px;
-        width: 22%;
-    }
-}
 .index-nav{
     position: relative;
     z-index: 1;  /* ------------------------------------------------------------層級1 */
     /* background-color: orange; */
     /* height: 100px; */
-
 }
 .index-nav li{
     list-style: none;
@@ -243,28 +225,80 @@ logo{ /* Logo */
     background-color: #E9625F;
     color: #F9F9F9;
 }
-
-/*======================================================={線上訂位}=======================================================*/
-/* -------------------購物車------->>>線上訂位------------------- */
-.online-shop .position {
-    position: fixed;
-    bottom: 50%;
-    left: 0;
-    width: 100%;
-    display: flex;
-    justify-content: right;
-    z-index: 2; /* ------------------------------------------------------------層級2 */
-}
 @media screen and (max-width: 768px) {
-    .online-shop .position {
+    .nav-box{
+        display: none;
+    }
+}
+/*======================================================={線上訂位}=======================================================*/
+/* mb手機版/線上訂位/(購物車) */
+.mb-online{
+    position: fixed; /* 保持固定位置 */
+    bottom: 20px; /* 距離底部的距離 */
+    right: 20px; /* 距離右側的距離 */
+    width: 100%; /* 或者設定一個固定的寬度 */
+    z-index: 3; /* ------------------------------------------------------------層級3 */
+}
+.mb-online .mb-position{
     position: fixed;
-    bottom: 50%;
+    bottom: 10%;
     left: 0;
     width: 100%;
     display: flex;
     justify-content: right;
-    z-index: 2; /* ------------------------------------------------------------層級2 */
+}
+.mb-online .mb-position .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 75px;
+    height: 75px;
+    /* height: 135px; */
+    background-color: #E9625F;
+    border-radius: 50% ;
+}
+.mb-online .mb-position .container :hover{
+    filter:alpha(Opacity=80);-moz-opacity:0.8;opacity: 0.8;
+}
+.mb-online .mb-position .container a{
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* 元素在主軸上置中 */
+    justify-content: center; /* 元素在交錯軸上置中 */
+    text-decoration: none;
+    font-size: 14px;
+    color: #F9F9F9;
+    margin-bottom: 12px;
+}
+.mb-online .mb-position .container a span{
+    color: #F9F9F9;
+    margin-top: 10px;
+}
+.mb-online .mb-position .container a span p{
+    letter-spacing: 5px; /* 字間距 */
+    margin-top: 10px;
+    text-align: center;
+}
+@media screen and (min-width: 768px) {
+    .mb-online{
+        display: none;
     }
+}
+/* -------------------購物車------->>>線上訂位------------------- */
+
+.online-shop {
+    position: fixed; /* 保持固定位置 */
+    bottom: 50%; /* 距離底部的距離 */
+    right: 0; /* 距離右側的距離 */
+    width: 100%; 
+    /* 或者設定一個固定的寬度 */
+    z-index: 3; /* ------------------------------------------------------------層級3 */
+}
+.online-shop .position {
+    width: 100%;
+    display: flex;
+    justify-content: right;
 }
 .online-shop .container :hover{
     filter:alpha(Opacity=80);-moz-opacity:0.8;opacity: 0.8;
@@ -275,22 +309,11 @@ logo{ /* Logo */
     justify-content: center;
     align-items: center;
     width: 38px;
-    height: 135px;
+    /* height: 135px; */
     background-color: #E9625F;
     border-radius: 10px 0px 0px 10px;
 }
-@media screen and (max-width: 768px) {
-    .online-shop .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 20px;
-    height: 100px;
-    background-color: #E9625F;
-    border-radius: 10px 0px 0px 10px;
-    }
-}
+
 .online-shop .container ul{
     padding: 0;
     display: flex;
@@ -306,15 +329,22 @@ logo{ /* Logo */
     align-items: center;
     text-decoration: none;
 }
+
 .online-shop .container ul li span{
     color: #F9F9F9;
     margin-top: 10px;
 }
+
 .online-shop .container ul li p{
     writing-mode: vertical-lr;
     letter-spacing: 5px; /* 字間距 */
     color: #F9F9F9;
     margin-top: 10px;
+}
+@media screen and (max-width:767px) {
+    .online-shop{
+        display: none;
+    }
 }
 /* -------------------關於我們------------------- */
 .about-us{
@@ -332,6 +362,20 @@ logo{ /* Logo */
     height: 100%;
     width: 63%;
     margin-top: 120px;
+}
+@media screen and (max-width:767px) {
+    .about-us .container-bcg-wave{
+        display: flex;
+        justify-content: right;
+        height: 500px;
+    }
+    .about-us .container-bcg-wave .bcg-wave{ /* 背景生成 */
+        background-image: url('picture/arches-bgpic.png');
+        background-repeat: repeat;
+        height: 100%;
+        width: 63%;
+        margin-top: 0;
+    }
 }
 /*扇紋背景下的大圓*/
 .about-us .container-bcg-circle{
@@ -362,6 +406,11 @@ logo{ /* Logo */
     left: 35.9%;
     z-index: 1; /* ------------------------------------------------------------層級1 */
 }
+@media screen and (max-width:767px) {
+    .about-us .container-bcg-scircle{
+        display: none;
+    }
+}
 /*師傅的圖*/
 .about-us .master-pic{
     position: absolute;
@@ -372,6 +421,11 @@ logo{ /* Logo */
 .about-us .master-pic img{
     width: 60%;
 }
+@media screen and (max-width:767px) {
+    .about-us .master-pic{
+        display: none;
+    }
+}
 /*師傅的手*/
 .about-us .hand-pic{
     position: absolute;
@@ -381,6 +435,11 @@ logo{ /* Logo */
 }
 .about-us .hand-pic img{
     width: 60%;
+}
+@media screen and (max-width:767px) {
+    .about-us .hand-pic{
+        display: none;
+    }
 }
 /* 立春亭について */
 .about-us .tsuite .container{
@@ -419,7 +478,7 @@ logo{ /* Logo */
     flex-direction: column; 
     justify-content: center; 
     align-items: center; 
-    margin: 5vh;
+    margin: 5vh 0;
 }
 .stick .container .text p{
     writing-mode: vertical-lr; /*直書方向*/
@@ -428,6 +487,11 @@ logo{ /* Logo */
 }
 .stick .container .text .riishuntei{
     color: #E6231C;
+}
+@media screen and (max-width:767px) {
+    .stick{
+        display: none;
+    }
 }
 /* -------------------立春亭的堅持------------------- */
 .stick-item{
@@ -438,13 +502,16 @@ logo{ /* Logo */
 .stick-item .container{
     display: flex;
     flex-direction: row;
+    /* justify-content: space-between; */
+    width: 100%;
 }
 /*味覺*/
 /*圖片下的圓 和 圖片*/
 .stick-item .aji{
+    width: 33%;
     display: flex;
     flex-direction: column;
-    margin: 0px 80px;
+    padding: 0px 8vw;
 }
 .stick-item .aji-pic{
     margin-bottom: 210px;
@@ -469,6 +536,11 @@ logo{ /* Logo */
     position: absolute;
     z-index: 1;
 } 
+@media screen and (max-width:767px) {
+    .stick-item #triggerAnchor{
+        display: none;
+    }
+}
 /*圖片下的文字*/
 .aji-text{
     display: flex;
@@ -510,9 +582,10 @@ logo{ /* Logo */
 /*製法*/
 /*圖片下的圓 和 圖片*/
 .stick-item .make{
+    width: 33%;
     display: flex;
     flex-direction: column;
-    margin: 0px 80px;
+    padding: 0px 8vw;
 }
 .stick-item .make-pic{
     margin-bottom: 210px;
@@ -563,9 +636,10 @@ logo{ /* Logo */
 /*食材*/
 /*圖片下的圓 和 圖片*/
 .stick-item .food{
+    width: 33%;
     display: flex;
     flex-direction: column;
-    margin: 0px 80px;
+    padding: 0px 8vw;
 }
 .stick-item .food-pic{
     margin-bottom: 210px;
@@ -612,6 +686,11 @@ logo{ /* Logo */
     color: #1c1c1c;
     font-style: normal;
     letter-spacing: 5px; /* 字間距 */
+}
+@media screen and (max-width:767px) {
+    .stick-item{
+        display: none;
+    }
 }
 /* -------------------熱門商品推薦------------------- */
 .hot-items{
@@ -704,6 +783,7 @@ logo{ /* Logo */
     justify-content: center; 
     flex-direction: column;
     align-items: center; 
+    overflow: hidden;
     /* height:200vh;  */
 }
 .branch .container .title{
