@@ -90,6 +90,12 @@ body{
         width: 90%;
     }
 }
+@media screen and (min-width:390px) {
+    .mb-nav .container .logo img {
+        width: 80%;
+        margin-top: 10px;
+    }
+}
 /*======================================================={index}=======================================================*/
 /* -------------------頭header------------------- */
 .header{
@@ -123,6 +129,12 @@ body{
 @media screen and (max-width: 768px) {
     .header-pic .text h1{
         font-size: 20px;
+    }
+}
+@media screen and (max-width: 390px) {
+    .header-pic .text h1{
+        font-size: 10px;
+        letter-spacing: 5px;
     }
 }
 /* -------------------導覽列------------------- */
@@ -258,6 +270,12 @@ body{
     background-color: #E9625F;
     border-radius: 50% ;
 }
+@media screen and (max-width:390px) {
+    .mb-online .mb-position .container{
+        width: 50px;
+        height: 50px;
+    }
+}
 .mb-online .mb-position .container :hover{
     filter:alpha(Opacity=80);-moz-opacity:0.8;opacity: 0.8;
 }
@@ -270,6 +288,11 @@ body{
     font-size: 14px;
     color: #F9F9F9;
     margin-bottom: 12px;
+}
+@media screen and (max-width:390px) {
+    .mb-online .mb-position .container a{
+        font-size: 8px;
+    }
 }
 .mb-online .mb-position .container a span{
     color: #F9F9F9;
@@ -313,7 +336,6 @@ body{
     background-color: #E9625F;
     border-radius: 10px 0px 0px 10px;
 }
-
 .online-shop .container ul{
     padding: 0;
     display: flex;
@@ -329,12 +351,10 @@ body{
     align-items: center;
     text-decoration: none;
 }
-
 .online-shop .container ul li span{
     color: #F9F9F9;
     margin-top: 10px;
 }
-
 .online-shop .container ul li p{
     writing-mode: vertical-lr;
     letter-spacing: 5px; /* 字間距 */
@@ -367,14 +387,21 @@ body{
     .about-us .container-bcg-wave{
         display: flex;
         justify-content: right;
-        height: 500px;
+        height: 550px;
     }
     .about-us .container-bcg-wave .bcg-wave{ /* 背景生成 */
-        background-image: url('picture/arches-bgpic.png');
-        background-repeat: repeat;
         height: 100%;
-        width: 63%;
+        width: 75%;
         margin-top: 0;
+    }
+}
+@media screen and (max-width:390px) {
+    .about-us .container-bcg-wave{
+        height: 450px;
+    }
+    .about-us .container-bcg-wave .bcg-wave{ /* 背景生成 */
+        height: 100%;
+        width: 100%;
     }
 }
 /*扇紋背景下的大圓*/
@@ -390,6 +417,25 @@ body{
 	background-color: #E6231C;
     margin-top: 20px;
     z-index: -1;  /* ------------------------------------------------------------層級-1 */
+}
+@media screen and (max-width:767px) {
+    .about-us .container-bcg-circle li{
+        list-style: none;
+        width: 75%;
+        height: 18vh;
+        border-radius: 40%;
+        background-color: #E6231C;
+        margin-top: -90px;
+        z-index: -1;
+    }
+}
+@media screen and (max-width:390px) {
+    .about-us .container-bcg-circle li{
+        width: 100%;
+        height: 10vh;
+        border-radius: 60%;
+        margin-top: -30px;
+    }
 }
 /*扇紋背景上的小圓*/
 .about-us .container-bcg-scircle{
@@ -423,6 +469,14 @@ body{
 }
 @media screen and (max-width:767px) {
     .about-us .master-pic{
+        position: absolute;
+        bottom: 30%;
+        left: 10%;
+        z-index: 3;
+    }
+}
+@media screen and (max-width:390px) {
+    .about-us .master-pic{
         display: none;
     }
 }
@@ -455,6 +509,19 @@ body{
 .about-us .tsuite .container .riishuntei{
     color: #E6231C;
 }
+@media screen and (max-width:767px) {
+    .about-us .tsuite .container{
+        position: absolute;
+        bottom: 65%;
+        left: 7%;
+        z-index: 4;
+    }
+}
+@media screen and (max-width:390px) {
+    .about-us .tsuite .container{
+        display: none;
+    }
+}
 /*關於我們的文字*/
 .about-us .text {
     text-align: center;
@@ -466,11 +533,43 @@ body{
     letter-spacing: 5px; /* 字間距 */
     line-height: 2.5
 }
+@media screen and (max-width:767px) {
+    .about-us .text{
+        margin-right: 30px;
+    }
+}
+@media screen and (max-width:390px) {
+    .about-us .text{
+        margin: -50px auto;
+    }
+}
 .about-us .text .title h2{
     font-size: 26px;
 }
+@media screen and (max-width:767px) {
+    .about-us .text .title h2{
+        font-size: 23px;
+    }
+}
+@media screen and (max-width:390px) {
+    .about-us .text .title h2{
+        font-size: 20px;
+    }
+}
 .about-us .text .content{
     font-size: 14px;
+}
+@media screen and (max-width:767px) {
+    .about-us .text .content{
+        font-size: 12px;
+        letter-spacing: 3px; /* 字間距 */
+    }
+}
+@media screen and (max-width:390px) {
+    .about-us .text .content{
+        font-size:10px;
+        letter-spacing: 3px; /* 字間距 */
+    }
 }
 /* -------------------立春亭のこだわり------------------- */
 .stick .container {
@@ -713,6 +812,12 @@ body{
     z-index: 1; 
     /* ------------------------------------------------------------層級1 */
 }
+@media screen and (max-width:390px) {
+    .hot-items .container .title .text h2{
+        font-size: 20px;
+    }
+}
+/*標題下的圓*/
 .hot-items .container .title .pic img{
     width: 80px; 
     position: absolute;
@@ -721,9 +826,34 @@ body{
     z-index: 0; 
     /* ------------------------------------------------------------層級0 */
 }
+@media screen and (max-width:767px) {
+    .hot-items .container .title .pic img{
+        position: absolute;
+        right: 210px;
+    }
+}
+@media screen and (max-width:390px) {
+    .hot-items .container .title .pic img{
+        width: 60px; 
+        position: absolute;
+        right: 60px;
+        top:  1px;
+        z-index: 0; 
+    }
+}
 .hot-items .container .item-list .list-container{
     width: 65%;
     margin: 0 auto;
+}
+@media screen and (max-width:767px) {
+    .hot-items .container .item-list .list-container{
+        width: 80%;
+    }
+}
+@media screen and (max-width:390px) {
+    .hot-items .container .item-list .list-container{
+        width: 95%;
+    }
 }
 .hot-items .container .item-list .list-container ul{
     display: flex;
@@ -737,11 +867,26 @@ body{
     margin: 35px;
     text-align: center; /* 水平居中 */
 }
+@media screen and (max-width:767px) {
+    .hot-items .container .item-list .list-container ul li{
+        margin: 54px;
+    }
+}
+@media screen and (max-width:390px) {
+    .hot-items .container .item-list .list-container ul li{
+        margin: 30px;
+    }
+}
 .hot-items .container .item-list .list-container ul li .pic-container{
     position: relative;
 }
 .hot-items .container .item-list .list-container ul li .pic-container .pic img{
     width: 185px;
+}
+@media screen and (max-width:390px) {
+    .hot-items .container .item-list .list-container ul li .pic-container .pic img{
+        width: 100px;
+    }
 }
 .hot-items .container .item-list .list-container ul li .pic-container .pic a{
     text-decoration: none; 
@@ -759,6 +904,12 @@ body{
     color: #1c1c1c;
     margin-top: 5px;
 }
+@media screen and (max-width:390px) {
+    .hot-items .container .item-list .list-container ul li .pic-container .pic p{
+        font-size: 10px;
+        letter-spacing: 2px;
+    }
+}
 /*li*/
 .hot-items .container .item-list .list-container ul li .pic-container .text{
     position: absolute;
@@ -767,6 +918,11 @@ body{
     font-size: 12px;
     color: #1c1c1c;
     writing-mode: vertical-lr; /*直書方向*/
+}
+@media screen and (max-width:390px) {
+    .hot-items .container .item-list .list-container ul li .pic-container .text{
+        font-size: 6px;
+    }
 }
 .hot-items .container .item-list .list-container ul li .pic-container .text p{
     letter-spacing: 3px; /* 字間距 */
@@ -777,6 +933,11 @@ body{
     background-repeat: repeat;
     height: 35vw;
 }
+@media screen and (max-width:767px) {
+    .branch {
+        height: 95vw;
+    }
+}
 .branch .container{
     margin: 100px auto;
     display: flex;
@@ -785,6 +946,12 @@ body{
     align-items: center; 
     overflow: hidden;
     /* height:200vh;  */
+}
+@media screen and (max-width:767px) {
+    .branch .container{
+        width: 80%;
+        margin-right: 50px;
+    }
 }
 .branch .container .title{
     position: relative;
@@ -799,6 +966,17 @@ body{
     position: relative; 
     z-index: 1; /* ------------------------------------------------------------層級1 */
 }
+@media screen and (max-width:767px) {
+    .branch .container .title .text h2{
+        margin-right: 50px;
+    }
+}
+@media screen and (max-width:390px) {
+    .branch .container .title .text h2{
+        font-size: 20px;
+        margin-left: 60px;
+    }
+}
 .branch .container .title .pic img{
     width: 80px;
     position: absolute;
@@ -806,8 +984,21 @@ body{
     left: 80px;
     z-index: 0; /* ------------------------------------------------------------層級0 */
 }
+@media screen and (max-width:390px) {
+    .branch .container .title .pic img{
+        width: 60px; 
+        position: absolute;
+        left: 60%;
+        z-index: 0; 
+    }
+}
 .branch .container .shop-list ul li img{
     width: 200px;
+}
+@media screen and (max-width:767px) {
+    .branch .container .shop-list ul li img{
+        width: 100px;
+    }
 }
 .branch .container .shop-list ul li img :hover{
     background-color: #E9625F;
@@ -816,10 +1007,25 @@ body{
     display: flex;
     list-style: none;
 }
+@media screen and (max-width:767px) {
+    .branch .container .shop-list ul{
+        display: flex;
+        flex-wrap: wrap; /* 讓item自動換行 */
+        gap: 10px;
+        justify-content: left; /* 水平居中 */
+    }
+}
 .branch .container .shop-list ul li{
     /* display: flex; */
     flex-direction: row;
     margin: 30px;
+}
+@media screen and (max-width:767px) {
+    .branch .container .shop-list ul li{
+        display: flex;
+        flex-wrap: wrap; /* 讓item自動換行 */
+        gap: 10px;
+    }
 }
 .shop-list ul li a  {
     text-align: center;
@@ -835,6 +1041,12 @@ body{
 .shop-list ul li a :hover{
     color: #E9625F;
 }
+@media screen and (max-width:390px) {
+    .branch{
+        display: none;
+    }
+}
+
 /* -------------------頁尾 ------------------- */
 footer section .container{
     background-color: #252525;
@@ -843,6 +1055,16 @@ footer section .container{
     justify-content: center; /* 水平居中 */
     align-items: center;
     height: 20vw;
+}
+@media screen and (max-width:767px) {
+    footer section .container{
+        height: 35vw;
+    }
+}
+@media screen and (max-width:390px) {
+    footer section .container{
+        height: 65vw;
+    }
 }
 footer section .container .footer-logo img{
     width: 50px;
@@ -855,10 +1077,21 @@ footer section .container .text p{
     letter-spacing: 5px; /* 字間距 */
     margin: 10px auto;
 }
+@media screen and (max-width:390px) {
+    footer section .container .text p{
+        font-size: 8px;
+        letter-spacing: 3px;
+    }
+}
 footer section .container .social-icon{
     display: flex;
     flex-direction: row;
     margin: 10px auto;
+}
+@media screen and (max-width:390px) {
+    footer section .container .social-icon{
+        margin: 8px auto;
+    }
 }
 footer section .container .social-icon .line-icon{
     margin: 0 10px;
@@ -874,6 +1107,13 @@ footer section .container .copyright p{
     color: #FFFFFF;
     margin: 10px auto;
     letter-spacing: 3px; /* 字間距 */
+}
+@media screen and (max-width:390px) {
+    footer section .container .copyright p{
+        font-size: 8px;
+    letter-spacing: 2px; /* 字間距 */
+
+    }
 }
 /*======================================================={product}{產品介紹}=======================================================*/
 /* -------------------{產品介紹}導覽列------------------- */
