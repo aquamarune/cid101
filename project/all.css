@@ -1040,7 +1040,7 @@ footer section .container{
     flex-direction: column;
     justify-content: center; /* 水平居中 */
     align-items: center;
-    height: 20vw;
+    height: 23vw;
 }
 @media screen and (max-width:767px) {
     footer section .container{
@@ -1097,9 +1097,25 @@ footer section .container .copyright p{
 @media screen and (max-width:430px) {
     footer section .container .copyright p{
         font-size: 8px;
-    letter-spacing: 2px; /* 字間距 */
+        letter-spacing: 2px; /* 字間距 */
 
     }
+}
+footer section .container .notes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* 水平居中 */
+    align-items: center;
+}
+footer section .container .notes p{
+    font-size: 9px;
+    color: #FFFFFF;
+    letter-spacing: 1px; /* 字間距 */
+}
+footer section .container .notes p a{
+    font-size: 9px;
+    color: #FFFFFF;
+    letter-spacing: 1px; /* 字間距 */
 }
 /*======================================================={product}{產品介紹}=======================================================*/
 /* -------------------{產品介紹}導覽列------------------- */
